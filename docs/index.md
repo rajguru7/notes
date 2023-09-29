@@ -41,3 +41,6 @@ reasearch/blockchain is not git updated (It has multiple directories - needs to 
 
 From now on I'll be using kebab-case not `snake_case` for my files and directories. I have seen kebab-case everywhere mostly so it'll be easier to collaborate.
 
+
+Transferring ~/personal directories between personal devices can be done through git but only if there are no secrets in the project.
+eg. telegram-monitor has .env file with API ID and HASH. These projects will have to be moved by SSD for now. **Think of a better solution**
