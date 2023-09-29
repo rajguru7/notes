@@ -1,0 +1,54 @@
+site_name: My Docs
+docs_dir: docs
+site_dir: build
+markdown_extensions:
+  - nl2br
+  - attr_list
+  - tables
+  #- codehilite                   #Not using since I am using pymdownx.highlight
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.snippets
+  - pymdownx.superfences:          #pymdown-extensions installed
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: puml
+          class: puml
+          format: !!python/name:mkdocs_puml_mod.fence.fence_puml
+  - pymdownx.highlight:
+      pygments_lang_class: true   #To show the class attribute for the language in code blocks in the rendered html
+      #auto_title: true           #To show the Language as a header above the code block 
+      #language_prefix: 'lang-'   #Used for changing the prefix of the lang class that is applied
+theme:
+  name: mkdocs
+  nav_style: dark
+  navigation_depth: 3
+  highlightjs: false              #Highlight.js is not allowing pygments.css to do the highlighting. For now I have disabled it.
+extra_css:
+  - css/pygments.css       #Refer productivity/tips.
+  - css/excali.css         #Refer productivity/main.md#feature-5
+extra_javascript:
+  - js/mathjax_config.js
+  - js/mathjax@3.2.2/es5/tex-mml-chtml.js
+  #- js/polyfill.min.js    #For mathjax support for browsers. Not required for chrome
+  - js/mermaid_config.js
+  - js/mermaid@8.13.10.min.js
+  - js/mermaid_loader.js
+plugins:
+  - search                #default plugin
+  - exclude:              #mkdocs-exclude plugin
+      glob:               #Ignoring the existing html and pdf files in docs/ from being copied to the site/ directory
+        - "*.pdf"
+        - "*.html"
+        - "*.gz"
+      regex:
+        - '^(work|learn|personal)\/(?!(.*\/docs\/|.*\.md$)).*'   #rejects all files except .md files and files in docs folder in work and learn"
+        - '^\.git'
+        - ".*~$"          #Used for ignoring the backup files created by vim
+  - inline-svg:
+      extension: ".excalidraw.svg"
+      delete: "(?s)<!-- svg-source:excalidraw -->.*<!-- payload-end -->|<defs>.*</defs>|\n"
+        #  - plantuml:             #For rendering puml code blocks
+        #      puml_url: https://www.plantuml.com/plantuml/

@@ -1,0 +1,82 @@
+@startuml
+top to bottom direction
+
+rectangle Browser as browser
+
+rectangle "Internet Landing Zone Vnet" as internet_landing_zone_vnet #line.dashed {
+    rectangle "Public LB" as lb
+    rectangle "DDOS" as ddos
+    rectangle "Firewall" as firewall
+    rectangle "WAF" as waf
+}
+
+rectangle "PROD ORP VNET" #line.dashed {
+    rectangle "Web Cluster" {
+        rectangle web_master_subnet as "Master subnet" {
+            rectangle "LB" as WMLB
+            rectangle "Node" as WMN1
+            rectangle "Node" as WMN2
+            rectangle "Node" as WMN3
+
+            WMLB --> WMN1
+            WMLB --> WMN2
+            WMLB --> WMN3
+        }
+        rectangle web_worker_subnet as "Worker subnet" {
+            rectangle "LB" as WWLB
+            rectangle "Node" as WWN1
+            rectangle "Node" as WWN2
+            rectangle "Node" as WWN3
+
+            WWLB --> WWN1
+            WWLB --> WWN2
+            WWLB --> WWN3
+        }
+    }
+
+    rectangle "App Cluster" {
+        rectangle app_master_subnet as "Master subnet" {
+            rectangle "LB" as AMLB
+            rectangle "Node" as AMN1
+            rectangle "Node" as AMN2
+            rectangle "Node" as AMN3
+
+            AMLB --> AMN1
+            AMLB --> AMN2
+            AMLB --> AMN3
+        }
+        rectangle app_worker_subnet as "Worker subnet" {
+            rectangle "LB" as AWLB
+            rectangle "Node" as AWN1
+            rectangle "Node" as AWN2
+            rectangle "Node" as AWN3
+
+            AWLB --> AWN1
+            AWLB --> AWN2
+            AWLB --> AWN3
+        }
+    }
+
+    rectangle "PE subnet" as pe_subnet {
+        rectangle ACRPE
+        rectangle SAPE
+        rectangle KVPE
+        rectangle DBPE
+    }
+
+    rectangle "Jump subnet" as jump_subnet {
+        rectangle Linux
+        rectangle Windows
+    }
+
+    rectangle "DB subnet"
+
+    jump_subnet --> pe_subnet
+    app_worker_subnet --> pe_subnet
+    
+}
+
+browser --> lb
+waf --> WWLB
+@enduml
+
