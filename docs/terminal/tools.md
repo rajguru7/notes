@@ -11,6 +11,7 @@ brew install fzf
 brew install fd
 brew install stow
 brew install tmux
+brew install 1password-cli (password manager)
 ```
 
 **Help**
