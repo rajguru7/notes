@@ -142,3 +142,25 @@ learnings:
   - taking input from stdin in python using sys module
   - creating my first python script (making it executable)
   - passing visual selection from vim to any shell command
+ 
+## `openv.bash`
+since op plugin init gh requires the 1password gui app to be installed, it can't be automated. Will manually take access token from op and put in environment as `GITHUB_TOKEN`.
+Also `op run -- gh` could have been used but the gh output is not formatted well when using this.
+
+
+<https://stackoverflow.com/questions/2683279/how-to-detect-if-a-script-is-being-sourced>
+
+```bash
+(return 0 2>/dev/null) && sourced=1 || sourced=0 #The return statement will raise an error if you try to execute it outside of a function or if the script is not sourced
+```
+
+Grouping: <https://www.gnu.org/software/bash/manual/bash.html#Command-Grouping>
+
+
+## Piping to nc is complex
+
+`echo "hi" | nc host port`
+This will send "hi" to nc and then nc will close connection. To keep the connection open after sending "hi" use below:
+`cat <(echo "hi") - | nc host port` This will keep stdin open as cat command will wait for stdin due to "-" . `<()` is process substitution in bash. Refer <https://www.gnu.org/software/bash/manual/bash.html#Process-Substitution>
+<https://superuser.com/questions/261900/how-can-i-pipe-commands-to-a-netcat-that-will-stay-alive>
+As I see it the netcat command will hold the socket open until it sees end of input. All these examples demonstrate this without actually saying much about why. I am interacting with SocketTest server using netcat for an extended period just using: cat -  |  nc   localhost  8063. SocketTest is a handy tool that can listen or serve on any TCP or UDP port.

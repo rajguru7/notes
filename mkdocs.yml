@@ -50,5 +50,5 @@ plugins:
   - inline-svg:
       extension: ".excalidraw.svg"
       delete: "(?s)<!-- svg-source:excalidraw -->.*<!-- payload-end -->|<defs>.*</defs>|\n"
-        #  - plantuml:             #For rendering puml code blocks
-        #      puml_url: https://www.plantuml.com/plantuml/
+  - plantuml:             #For rendering puml code blocks
+      puml_url: https://www.plantuml.com/plantuml/

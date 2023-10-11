@@ -1,0 +1,6 @@
+mkdocs
+mkdocs-exclude
+pymdown-extensions
+Pygments
+mkdocs-plugin-inline-svg-mod
+mkdocs-puml-mod
