@@ -156,6 +156,13 @@ Also `op run -- gh` could have been used but the gh output is not formatted well
 
 Grouping: <https://www.gnu.org/software/bash/manual/bash.html#Command-Grouping>
 
+## `ask.sh`
+sends query to chatgpt. use `openv` to load openai token into environment before running
+
+Usage:
+ask.sh "<prompt>" <output-token-limit(optional)>
+
+<https://javabydeveloper.com/how-to-use-chatgpt-api-with-curl/> 
 
 ## Piping to nc is complex
 
@@ -164,3 +171,5 @@ This will send "hi" to nc and then nc will close connection. To keep the connect
 `cat <(echo "hi") - | nc host port` This will keep stdin open as cat command will wait for stdin due to "-" . `<()` is process substitution in bash. Refer <https://www.gnu.org/software/bash/manual/bash.html#Process-Substitution>
 <https://superuser.com/questions/261900/how-can-i-pipe-commands-to-a-netcat-that-will-stay-alive>
 As I see it the netcat command will hold the socket open until it sees end of input. All these examples demonstrate this without actually saying much about why. I am interacting with SocketTest server using netcat for an extended period just using: cat -  |  nc   localhost  8063. SocketTest is a handy tool that can listen or serve on any TCP or UDP port.
+
+
