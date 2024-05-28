@@ -4,3 +4,5 @@ pymdown-extensions
 Pygments
 mkdocs-plugin-inline-svg-mod
 mkdocs-puml-mod
+mkdocs-terminal
+mkdocs-material

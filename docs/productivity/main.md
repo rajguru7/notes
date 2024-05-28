@@ -287,6 +287,11 @@ Refer [productivity/tools][int1] for tools that I am using for documentation
     Could be because mermaid is getting loaded after loading of page.
 6.  Table headers are not getting aligned.
 7.  Blank spaces are automatically removed when converting from md to html. So any manual alignment done with spaces is lost.
+8.  Notes are not compatible with Github markdown rendering:
+    * Stop using hard line breaks in your notes. With this you can even adhere to 80 character limit for lines.
+    * do not use two spaces at the end for line break as they are not easily seen.
+    * use bullets if you want new lines.
+    * Will have to re format all the docs till now.
 
 ### Closed
 1.  Indented fenced code blocks are not supported by mkdocs. This is possible in Github [[3]](ext3) and pandoc (checked myself)

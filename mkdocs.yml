@@ -1,8 +1,8 @@
-site_name: My Docs
+site_name: Notes
 docs_dir: docs
 site_dir: build
 markdown_extensions:
-  - nl2br
+  # - nl2br
   - attr_list
   - tables
   #- codehilite                   #Not using since I am using pymdownx.highlight
@@ -22,20 +22,33 @@ markdown_extensions:
       #auto_title: true           #To show the Language as a header above the code block 
       #language_prefix: 'lang-'   #Used for changing the prefix of the lang class that is applied
 theme:
-  name: mkdocs
-  nav_style: dark
-  navigation_depth: 3
-  highlightjs: false              #Highlight.js is not allowing pygments.css to do the highlighting. For now I have disabled it.
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - header.autohide
+  palette:
+    scheme: 'slate'
+    primary: 'black'
+  font:
+    text: 'Roboto Mono'
+    code: 'Roboto Mono'
+  # navigation_depth: 3
+  # highlightjs: false              #Highlight.js is not allowing pygments.css to do the highlighting. For now I have disabled it.
+copyright: '&copy; 2024 Saurabh Rajguru'
+extra:
+  generator: false
 extra_css:
-  - css/pygments.css       #Refer productivity/tips.
+  # - css/pygments.css       #not needed for material theme
   - css/excali.css         #Refer productivity/main.md#feature-5
 extra_javascript:
   - js/mathjax_config.js
   - js/mathjax@3.2.2/es5/tex-mml-chtml.js
   #- js/polyfill.min.js    #For mathjax support for browsers. Not required for chrome
-  - js/mermaid_config.js
-  - js/mermaid@8.13.10.min.js
-  - js/mermaid_loader.js
+  # - js/mermaid_config.js        #Not required for material theme
+  # - js/mermaid@8.13.10.min.js   #Not required for material theme
+  # - js/mermaid_loader.js        #Not required for material theme
 plugins:
   - search                #default plugin
   - exclude:              #mkdocs-exclude plugin
@@ -44,7 +57,7 @@ plugins:
         - "*.html"
         - "*.gz"
       regex:
-        - '^(work|learn|personal)\/(?!(.*\/docs\/|.*\.md$)).*'   #rejects all files except .md files and files in docs folder in work and learn"
+        - '^(work|learn|personal|ctf)\/(?!(.*\/docs\/|.*\.md$|.*\.png$|.*\.svg$)).*'   #rejects all files except .md files and files in docs folder in work and learn"
         - '^\.git'
         - ".*~$"          #Used for ignoring the backup files created by vim
   - inline-svg:
