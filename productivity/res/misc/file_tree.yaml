@@ -1,0 +1,101 @@
+work:
+  - project1: #(git)
+      - src:
+          - module1
+          - module2
+      - test
+      - lib
+      - assets:             #(if req for the code build)
+          - img
+          - fonts
+      - build
+      - Makefile
+      - Dockerfile
+      - tools:              #(build scripts;automation)
+          - script1.sh
+      - docs:
+          - res:            #resources
+            - img:
+                - diag1.excalidraw.svg
+                - subdir1_diag1.drawio.svg
+            - misc:
+                - yaml1.yaml
+                - text1.txt
+          - dev.md
+          - user-guide.md
+          - subdir1:
+              - file1.md
+              - file2.md
+      - README.md
+  - project2 #(git)
+learn:
+  - topic1: #(git)
+      - ref #Reference texts
+      - img
+      - solutions #solutions for self study problems
+      - docs:
+          - res:
+            - img:
+                - diag1.excalidraw.svg
+                - coursera_diag1.drawio.svg
+            - misc:
+                - yaml1.yaml
+                - text1.txt
+          - iitb.md       #iit specific learning
+          - nyu.md
+          - coursera:                     #Directory if required
+              - file1.md
+              - file2.md
+      - iitb:
+          - prev:           #previous year material
+              - 2019
+          - material:
+              - lecture1.ppt
+              - lecture2.pdf
+          - problems:
+              - ass1.pdf
+              - quiz1.pdf
+          - solutions:
+              - soln_ass1.pdf
+              - soln_quiz1.pdf
+          - info.yaml         #(header - instructor;semester;reference;code;spring/fall/summer;year;level;stream)
+      - nyu
+      - coursera
+      - udemy
+      - solve: #(For solving/answering questions on topic)
+          - book_ch1
+          - book_ch2
+          - iitb_ass1
+      - README.md #(For taking notes about the topic)
+  - topic2
+notes:
+  - build
+  - assets:
+      - js
+      - css
+      - fonts
+  - .gitignore #(contains build/)
+  - mkdocs.yml
+  - tools
+      - script1.sh
+  - docs:
+      - js #(symlinked to assets/js - ideally should not be here at all -  mkdocs limitation)
+      - css #(symlinked to assets/css - ideally should not be here at all -  mkdocs limitation)
+      - fonts #(symlinked to assets/fonts - ideally should not be here at all -  mkdocs limitation)
+      - img #(common imgs)
+      - index.md #(links to all topics)
+      - topic1:
+          - res:
+            - img:
+                - diag1.excalidraw.svg
+                - subdir1_diag1.excalidraw.svg
+                - ss1.png
+                - subdir1_ss1.png
+            - misc:
+                - yaml1.yaml
+                - text1.txt
+          - README.md
+          - subdir1:
+              - file1.md
+              - file2.md
+      - rough

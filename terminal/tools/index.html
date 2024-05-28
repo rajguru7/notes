@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../package_manager/" rel="prev"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.24" name="generator"/>
+<title>Tools - Notes</title>
+<link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
+<link href="../../css/excali.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#tools">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Notes" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Notes">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Notes
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Tools
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        
+  
+    
+  
+  Todo
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../productivity/file-structure/">
+          
+  
+  Productivity
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../guides/">
+          
+  
+  Terminal
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Notes" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Notes">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Notes
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Todo
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Productivity
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Productivity
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/file-structure/">
+<span class="md-ellipsis">
+    File structure
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/guides/">
+<span class="md-ellipsis">
+    Guides
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/main/">
+<span class="md-ellipsis">
+    Main
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/password-manager/">
+<span class="md-ellipsis">
+    Password Managers
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/python-environment/">
+<span class="md-ellipsis">
+    Python environment set up
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/tips/">
+<span class="md-ellipsis">
+    Tips
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/tools/">
+<span class="md-ellipsis">
+    Tools
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/vpn-set-up/">
+<span class="md-ellipsis">
+    Using openvpn for now
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../productivity/website/">
+<span class="md-ellipsis">
+    My Website
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    Terminal
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Terminal
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../guides/">
+<span class="md-ellipsis">
+    Guides
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../package_manager/">
+<span class="md-ellipsis">
+    Package manager
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Tools
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Tools
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#installed">
+<span class="md-ellipsis">
+      Installed
+    </span>
+</a>
+<nav aria-label="Installed" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#brew">
+<span class="md-ellipsis">
+      brew
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pip">
+<span class="md-ellipsis">
+      pip
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use">
+<span class="md-ellipsis">
+      Use
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tool-info">
+<span class="md-ellipsis">
+      Tool info
+    </span>
+</a>
+<nav aria-label="Tool info" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vim">
+<span class="md-ellipsis">
+      Vim
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+<span class="md-ellipsis">
+      References
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#installed">
+<span class="md-ellipsis">
+      Installed
+    </span>
+</a>
+<nav aria-label="Installed" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#brew">
+<span class="md-ellipsis">
+      brew
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pip">
+<span class="md-ellipsis">
+      pip
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use">
+<span class="md-ellipsis">
+      Use
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tool-info">
+<span class="md-ellipsis">
+      Tool info
+    </span>
+</a>
+<nav aria-label="Tool info" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vim">
+<span class="md-ellipsis">
+      Vim
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+<span class="md-ellipsis">
+      References
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="tools">Tools</h1>
+<p>This doc explains the tools that I am using.</p>
+<h3 id="installed">Installed</h3>
+<h4 id="brew">brew</h4>
+<p><strong>Productivity</strong>
+<div class="language-bash highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>fzf
+brew<span class="w"> </span>install<span class="w"> </span>fd
+brew<span class="w"> </span>install<span class="w"> </span>stow
+brew<span class="w"> </span>install<span class="w"> </span>tmux
+brew<span class="w"> </span>install<span class="w"> </span>1password-cli<span class="w"> </span><span class="o">(</span>password<span class="w"> </span>manager<span class="o">)</span>
+</code></pre></div></p>
+<p><strong>Help</strong>
+<div class="language-bash highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>tldr
+</code></pre></div></p>
+<p><strong>Document creation</strong>
+<div class="language-bash highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>pandoc
+brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"> </span>basictex<span class="w"> </span><span class="o">(</span>Run:<span class="w"> </span><span class="nb">eval</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span>/usr/libexec/path_helper<span class="k">)</span><span class="s2">"</span><span class="w"> </span>to<span class="w"> </span>get<span class="w"> </span>the<span class="w"> </span>cli<span class="w"> </span>tools<span class="w"> </span>ready<span class="w"> </span>without<span class="w"> </span>restarting<span class="w"> </span>terminal.<span class="w"> </span>Only<span class="w"> </span><span class="k">for</span><span class="w"> </span>zsh<span class="w"> </span>and<span class="w"> </span>bash<span class="w"> </span>users<span class="o">)</span>
+<span class="c1"># To enable automatic docs build of new tex packages and build docs for current packages</span>
+sudo<span class="w"> </span>tlmgr<span class="w"> </span>update<span class="w"> </span>--self
+sudo<span class="w"> </span>tlmgr<span class="w"> </span>install<span class="w"> </span>texdoc
+sudo<span class="w"> </span>tlmgr<span class="w"> </span>option<span class="w"> </span>docfiles<span class="w"> </span><span class="m">1</span>
+sudo<span class="w"> </span>tlmgr<span class="w"> </span>install<span class="w"> </span>--reinstall<span class="w"> </span><span class="k">$(</span>tlmgr<span class="w"> </span>list<span class="w"> </span>--only-installed<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-E<span class="w"> </span><span class="s1">'s/i (.*):.*$/\1/'</span><span class="k">)</span>
+brew<span class="w"> </span>install<span class="w"> </span>librsvg<span class="w"> </span><span class="o">(</span>To<span class="w"> </span>handle<span class="w"> </span>SVG<span class="w"> </span>images<span class="w"> </span><span class="k">in</span><span class="w"> </span>md<span class="w"> </span>to<span class="w"> </span>pdf<span class="w"> </span>conversion<span class="w"> </span>using<span class="w"> </span>pandoc<span class="w"> </span>and<span class="w"> </span>basictex<span class="o">)</span>
+</code></pre></div></p>
+<p><strong>Handling json, xml, yaml, toml</strong>
+<div class="language-bash highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>jq
+brew<span class="w"> </span>install<span class="w"> </span>yq
+</code></pre></div></p>
+<p><strong>CTF tools</strong>
+<div class="language-bash highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>exiftool<span class="w"> </span><span class="o">(</span>To<span class="w"> </span>read/write<span class="w"> </span>metadata<span class="w"> </span>of<span class="w"> </span>various<span class="w"> </span>files<span class="o">)</span>
+brew<span class="w"> </span>install<span class="w"> </span>binwalk<span class="w"> </span><span class="o">(</span>To<span class="w"> </span>find<span class="w"> </span>embedded<span class="w"> </span>files<span class="w"> </span>inside<span class="w"> </span>a<span class="w"> </span>file<span class="o">)</span>
+brew<span class="w"> </span>tap<span class="w"> </span>Gallopsled/pwntools-binutils<span class="w"> </span>https://github.com/Gallopsled/pwntools-binutils<span class="w">  </span><span class="o">(</span>Binutils<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>pwn<span class="w"> </span>tools<span class="w"> </span><span class="k">in</span><span class="w"> </span>python<span class="o">)</span>
+brew<span class="w"> </span>install<span class="w"> </span>-s<span class="w"> </span>/usr/local/Homebrew/Library/Taps/gallopsled/homebrew-pwntools-binutils/macos/binutils-amd64.rb
+brew<span class="w"> </span>install<span class="w"> </span>nasm<span class="w"> </span><span class="o">(</span>To<span class="w"> </span>run<span class="w"> </span>assembly<span class="w"> </span>code<span class="o">)</span>
+brew<span class="w"> </span>install<span class="w"> </span>gdb<span class="w"> </span><span class="o">(</span>debugger<span class="w"> </span><span class="k">for</span><span class="w"> </span>cli<span class="o">)</span>
+brew<span class="w"> </span>install<span class="w"> </span>tesseract<span class="w"> </span><span class="o">(</span>image<span class="w"> </span>to<span class="w"> </span>text<span class="w"> </span>OCR<span class="o">)</span>
+</code></pre></div></p>
+<h4 id="pip">pip</h4>
+<div class="language-bash highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>mkdocs
+pip3<span class="w"> </span>install<span class="w"> </span>mkdocs-exclude
+pip3<span class="w"> </span>install<span class="w"> </span>pymdown-extensions<span class="w"> </span><span class="o">(</span>For<span class="w"> </span>superfences<span class="w"> </span>extension<span class="w"> </span>-<span class="w"> </span>enables<span class="w"> </span>indented<span class="w"> </span>fenced<span class="w"> </span>code<span class="w"> </span>blocks,<span class="w"> </span>this<span class="w"> </span>is<span class="w"> </span>supported<span class="w"> </span>by<span class="w"> </span>gfm<span class="o">)</span>
+pip3<span class="w"> </span>install<span class="w"> </span>pygments<span class="w"> </span><span class="o">(</span>For<span class="w"> </span>working<span class="w"> </span>with<span class="w"> </span>pymdownx.highlight<span class="w"> </span>and<span class="w"> </span>pymdownx.superfences<span class="w"> </span><span class="k">in</span><span class="w"> </span>mkdocs<span class="o">)</span>
+pip3<span class="w"> </span>install<span class="w"> </span>mkdocs-plugin-inline-svg-mod<span class="w"> </span><span class="o">(</span>For<span class="w"> </span>allowing<span class="w"> </span>import<span class="w"> </span>of<span class="w"> </span>fonts<span class="w"> </span><span class="k">in</span><span class="w"> </span>svg<span class="w"> </span>generated<span class="w"> </span>by<span class="w"> </span>ecalidraw<span class="o">)</span>
+pip3<span class="w"> </span>install<span class="w"> </span>mkdocs_puml<span class="w"> </span><span class="o">(</span>For<span class="w"> </span>enabling<span class="w"> </span>puml<span class="w"> </span>code<span class="w"> </span>blocks<span class="o">)</span>
+pip3.11<span class="w"> </span>install<span class="w"> </span>pwn<span class="w"> </span><span class="o">(</span>Needs<span class="w"> </span>binutils<span class="w"> </span>as<span class="w"> </span>per<span class="w"> </span>pwntools<span class="w"> </span>documentation<span class="w"> </span>see<span class="w"> </span>above<span class="o">)</span>
+pip3.11<span class="w"> </span>install<span class="w"> </span>tesseract<span class="w"> </span><span class="o">(</span>To<span class="w"> </span>use<span class="w"> </span>tesseract<span class="w"> </span>binary<span class="w"> </span><span class="k">in</span><span class="w"> </span>python<span class="p">;</span><span class="w"> </span>you<span class="w"> </span>need<span class="w"> </span>to<span class="w"> </span>install<span class="w"> </span>tesseract<span class="w"> </span>with<span class="w"> </span>brew<span class="w"> </span>first<span class="o">)</span>
+pip3.11<span class="w"> </span>install<span class="w"> </span>python-dotenv<span class="w"> </span><span class="o">(</span>For<span class="w"> </span>using<span class="w"> </span>.env<span class="w"> </span>file<span class="w"> </span>to<span class="w"> </span>hide<span class="w"> </span>variables<span class="w"> </span><span class="k">in</span><span class="w"> </span>python<span class="o">)</span>
+</code></pre></div>
+<p><a href="../../productivity/guides/#publishing-pip-package">pip publishing tools</a></p>
+<p>pip3 install pyyaml #Validating yaml</p>
+<p>pip3 install telethon #For using telegram API. Refer <a href="https://stackoverflow.com/questions/56295761/how-to-get-a-message-from-telegram-groups-by-api" title="telegram;api">[2]</a> <a href="https://github.com/LonamiWebs/Telethon" title="telegram;api">[3]</a></p>
+<p>pip3 install pix2tex #For converting math images to latex</p>
+<h3 id="use">Use</h3>
+<ol>
+<li>Vim
+The vim configuration documentation can be seen in ~/.vimrc file</li>
+<li>Vimium
+Used for using vim keybindings in browser. Have installed as an extension in chrome.</li>
+<li>fzf
+Used for fuzzy searching in vim and terminal</li>
+<li>zsh
+Used as the terminal. The configuration can be seen in ~/.zshrc</li>
+</ol>
+<h3 id="tool-info">Tool info</h3>
+<h4 id="vim">Vim</h4>
+<p>As checked while using mkdocs, mkdocs watches the directory for any changes and performs a new build.
+In Vim, there are backup files that are created while editing.
+These backup files end with '.md~' by default.
+While writing vim writes the updates to the files in the backup file and then deletes the original file and then renames the backup file to the original file <a href="https://stackoverflow.com/questions/607435/why-does-vim-save-files-with-a-extension">[1]</a>.
+This step results in error in mkdocs because the orginal file is getting deleted which is then not found in mkdocs.
+To resolve this, I have set backupcopy to "yes" for md files which creates the backup file but the edits happen to original file and then the backup file is removed. Refer ":help backup" in vim.</p>
+<h2 id="references">References</h2>
+<p>[1] <a href="https://stackoverflow.com/questions/607435/why-does-vim-save-files-with-a-extension">https://stackoverflow.com/questions/607435/why-does-vim-save-files-with-a-extension</a>
+[2] <a href="https://stackoverflow.com/questions/56295761/how-to-get-a-message-from-telegram-groups-by-api">https://stackoverflow.com/questions/56295761/how-to-get-a-message-from-telegram-groups-by-api</a> (telegram;api)
+[3] <a href="https://github.com/LonamiWebs/Telethon">https://github.com/LonamiWebs/Telethon</a> (telegram;api)</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      © 2024 Saurabh Rajguru
+    </div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+<script src="../../js/mathjax_config.js"></script>
+<script src="../../js/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

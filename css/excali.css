@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Virgil";
+    /*src: url("https://unpkg.com/@excalidraw/excalidraw@0.14.1/dist/excalidraw-assets/Virgil.woff2");*/
+    src: url("../fonts/Virgil.woff2");
+}
+
+.col-md-9 svg {
+    max-width: 100%;
+    display: inline-block;
+    padding: 4px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px auto 30px auto;
+}
+
+/* text {
+    font-family: "Virgil"
+} */
+

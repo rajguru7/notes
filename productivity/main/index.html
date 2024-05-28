@@ -1,0 +1,853 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../guides/" rel="prev"/>
+<link href="../password-manager/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.24" name="generator"/>
+<title>Main - Notes</title>
+<link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
+<link href="../../css/excali.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#main">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Notes" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Notes">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Notes
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Main
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        
+  
+    
+  
+  Todo
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../file-structure/">
+          
+  
+  Productivity
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../terminal/guides/">
+          
+  
+  Terminal
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Notes" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Notes">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Notes
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Todo
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    Productivity
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Productivity
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../file-structure/">
+<span class="md-ellipsis">
+    File structure
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../guides/">
+<span class="md-ellipsis">
+    Guides
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Main
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Main
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thought-process">
+<span class="md-ellipsis">
+      Thought process
+    </span>
+</a>
+<nav aria-label="Thought process" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general">
+<span class="md-ellipsis">
+      General
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-1">
+<span class="md-ellipsis">
+      Feature 1
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-4">
+<span class="md-ellipsis">
+      Feature 4
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-5">
+<span class="md-ellipsis">
+      Feature 5
+    </span>
+</a>
+<nav aria-label="Feature 5" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#svg-or-png">
+<span class="md-ellipsis">
+      SVG or PNG
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issue-2">
+<span class="md-ellipsis">
+      Issue 2
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-6">
+<span class="md-ellipsis">
+      Feature 6
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#a-note-on-diagramming-tools">
+<span class="md-ellipsis">
+      A note on Diagramming tools
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-7">
+<span class="md-ellipsis">
+      Feature 7
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#folder-structure">
+<span class="md-ellipsis">
+      Folder structure
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tools">
+<span class="md-ellipsis">
+      Tools
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issues">
+<span class="md-ellipsis">
+      Issues
+    </span>
+</a>
+<nav aria-label="Issues" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#open">
+<span class="md-ellipsis">
+      Open
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#closed">
+<span class="md-ellipsis">
+      Closed
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#roadmap">
+<span class="md-ellipsis">
+      Roadmap
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+<span class="md-ellipsis">
+      References
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../password-manager/">
+<span class="md-ellipsis">
+    Password Managers
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../python-environment/">
+<span class="md-ellipsis">
+    Python environment set up
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tips/">
+<span class="md-ellipsis">
+    Tips
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tools/">
+<span class="md-ellipsis">
+    Tools
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../vpn-set-up/">
+<span class="md-ellipsis">
+    Using openvpn for now
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../website/">
+<span class="md-ellipsis">
+    My Website
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Terminal
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Terminal
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../terminal/guides/">
+<span class="md-ellipsis">
+    Guides
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../terminal/package_manager/">
+<span class="md-ellipsis">
+    Package manager
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../terminal/tools/">
+<span class="md-ellipsis">
+    Tools
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thought-process">
+<span class="md-ellipsis">
+      Thought process
+    </span>
+</a>
+<nav aria-label="Thought process" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general">
+<span class="md-ellipsis">
+      General
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-1">
+<span class="md-ellipsis">
+      Feature 1
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-4">
+<span class="md-ellipsis">
+      Feature 4
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-5">
+<span class="md-ellipsis">
+      Feature 5
+    </span>
+</a>
+<nav aria-label="Feature 5" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#svg-or-png">
+<span class="md-ellipsis">
+      SVG or PNG
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issue-2">
+<span class="md-ellipsis">
+      Issue 2
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-6">
+<span class="md-ellipsis">
+      Feature 6
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#a-note-on-diagramming-tools">
+<span class="md-ellipsis">
+      A note on Diagramming tools
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-7">
+<span class="md-ellipsis">
+      Feature 7
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#folder-structure">
+<span class="md-ellipsis">
+      Folder structure
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tools">
+<span class="md-ellipsis">
+      Tools
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#issues">
+<span class="md-ellipsis">
+      Issues
+    </span>
+</a>
+<nav aria-label="Issues" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#open">
+<span class="md-ellipsis">
+      Open
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#closed">
+<span class="md-ellipsis">
+      Closed
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#roadmap">
+<span class="md-ellipsis">
+      Roadmap
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+<span class="md-ellipsis">
+      References
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="main">Main</h1>
+<hr/>
+<h2 id="features">Features</h2>
+<ol>
+<li>A single source of docs which can be accessed on any browser.
+    a.  Everything that you are learning and working on will be documented in one place</li>
+<li>Easily editable using vim which can run on all OS and platforms. </li>
+<li>Ability to switch easily b/w different docs just like switching between different notes on the Notes Mac app</li>
+<li>The source docs should be easily convertible to different formats without any problems.</li>
+<li>Support for whiteboard drawings that can be added quickly to the md files.</li>
+<li>Support for mermaid and PlantUML diagrams</li>
+<li>Support for math equations</li>
+</ol>
+<hr/>
+<h2 id="thought-process">Thought process</h2>
+<h3 id="general">General</h3>
+<p>I have notes on my Notes Mac app:
+These notes will only be for notes that have to be edited on mobile as well OR for notes which are not important for learning.</p>
+<p>To easily switch between different docs, I'll have to make something that can serve the directory structure.
+This can be done using nginx OR
+As mentioned in <a href="https://medium.com/@TKalippke/all-you-have-to-do-is-type-yourself-494a2c0b2fd6">[1]</a>, mkdocs can also be used.
+<a href="https://vim.works/2019/03/16/using-markdown-in-vim/">[2]</a> gives a good overview of using md with vim. As per this document Marked 2 is a good app for integrating with vim on Mac.</p>
+<h3 id="feature-1">Feature 1</h3>
+<p>To get all the docs in one place I added symlinks of both <code>~/work</code> and <code>~/learn</code> directories to the mkdocs docs directory i.e <code>~/notes/docs</code>
+To prevent all the source files and images from getting served when running <code>mkdocs serve</code> the files were excluded by adding a regex path in mkdocs exclude config in <code>mkdocs.yml</code>.</p>
+<p><code>'^(work|learn)\/(?!(.*\/docs\/|.*\.md$)).*'</code> - rejects all files except .md files and files in docs folder in work and learn"</p>
+<p>The above works only if a consistent directory structure is used in work and learn directories.</p>
+<div class="puml"><svg contentstyletype="text/css" height="42px" preserveaspectratio="true" style="background: #ffffff" version="1.1" viewbox="0 0 89 42" width="89px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomandpan="magnify"><defs></defs><g><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="67" x="10" y="10"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="14" x="15" y="24.9951">hi</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="33" x="39" y="24.9951">hello</text><line style="stroke:#000000;stroke-width:1.0;" x1="34" x2="34" y1="10" y2="30.2969"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="67" x="10" y="10"></rect></g></svg></div>
+<div class="puml"><svg contentstyletype="text/css" height="725px" preserveaspectratio="true" style="background: #ffffff" version="1.1" viewbox="0 0 1407 725" width="1407px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomandpan="magnify"><defs></defs><g><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="77" x="10" y="340"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="40" x="15" y="354.9951">work</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="70" y="354.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="65" x2="65" y1="340" y2="360.2969"></line><line style="stroke:#000000;stroke-width:1.0;" x1="10" x2="87" y1="360.2969" y2="360.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="40" x="15" y="375.292">learn</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="70" y="375.292">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="65" x2="65" y1="360.2969" y2="380.5938"></line><line style="stroke:#000000;stroke-width:1.0;" x1="10" x2="87" y1="380.5938" y2="380.5938"></line><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="45" x="15" y="395.5889">notes</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="70" y="395.5889">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="65" x2="65" y1="380.5938" y2="400.8906"></line><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="77" x="10" y="340"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="67" x="136.5" y="246"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="141.5" y="260.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="136.5" x2="203.5" y1="266.2969" y2="266.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="57" x="141.5" y="281.292">project2</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="67" x="136.5" y="246"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="98" x="253" y="156.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="66" x="258" y="171.3467">project1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="334" y="171.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="329" x2="329" y1="156.3516" y2="176.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="98" x="253" y="156.3516"></rect><rect fill="#F1F1F1" height="202.9688" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="96" x="388" y="20"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="393" y="34.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="40.2969" y2="40.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="27" x="393" y="55.292">test</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="60.5938" y2="60.5938"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="15" x="393" y="75.5889">lib</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="80.8906" y2="80.8906"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="393" y="95.8857">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="101.1875" y2="101.1875"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="33" x="393" y="116.1826">build</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="121.4844" y2="121.4844"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="56" x="393" y="136.4795">Makefile</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="141.7813" y2="141.7813"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="69" x="393" y="156.7764">Dockerfile</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="162.0781" y2="162.0781"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="393" y="177.0732">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="182.375" y2="182.375"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="393" y="197.3701">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="202.6719" y2="202.6719"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="86" x="393" y="217.667">README.md</text><rect fill="none" height="202.9688" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="96" x="388" y="20"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="57" x="534.5" y="20.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="25" x="539.5" y="35.3467">src</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="574.5" y="35.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="569.5" x2="569.5" y1="20.3516" y2="40.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="57" x="534.5" y="20.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="71" x="662" y="10"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="61" x="667" y="24.9951">module1</text><line style="stroke:#000000;stroke-width:1.0;" x1="662" x2="733" y1="30.2969" y2="30.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="61" x="667" y="45.292">module2</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="71" x="662" y="10"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="84" x="521" y="80.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="52" x="526" y="95.3467">assets</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="588" y="95.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="583" x2="583" y1="80.3516" y2="100.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="84" x="521" y="80.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="45" x="675" y="70"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="25" x="680" y="84.9951">img</text><line style="stroke:#000000;stroke-width:1.0;" x1="675" x2="720" y1="90.2969" y2="90.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="35" x="680" y="105.292">fonts</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="45" x="675" y="70"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="71" x="527.5" y="140.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="39" x="532.5" y="155.3467">tools</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="581.5" y="155.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="576.5" x2="576.5" y1="140.3516" y2="160.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="71" x="527.5" y="140.3516"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="78" x="658.5" y="129.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="68" x="663.5" y="144.3467">script1.sh</text><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="78" x="658.5" y="129.3516"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="70" x="528" y="190.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="38" x="533" y="205.3467">docs</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="581" y="205.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="576" x2="576" y1="190.3516" y2="210.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="70" x="528" y="190.3516"></rect><rect fill="#F1F1F1" height="81.1875" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="111" x="642" y="167.9063"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="647" y="182.9014">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="642" x2="753" y1="188.2031" y2="188.2031"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="51" x="647" y="203.1982">dev.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="642" x2="753" y1="208.5" y2="208.5"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="101" x="647" y="223.4951">user-guide.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="642" x2="753" y1="228.7969" y2="228.7969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="647" y="243.792">   </text><rect fill="none" height="81.1875" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="111" x="642" y="167.9063"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="58" x="814" y="168.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="26" x="819" y="183.3467">res</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="855" y="183.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="850" x2="850" y1="168.3516" y2="188.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="58" x="814" y="168.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="22" x="977" y="158"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="982" y="172.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="977" x2="999" y1="178.2969" y2="178.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="982" y="193.292">   </text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="22" x="977" y="158"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="60" x="1084" y="139.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="28" x="1089" y="154.3467">img</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="1127" y="154.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1122" x2="1122" y1="139.3516" y2="159.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="60" x="1084" y="139.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="184" x="1198" y="124"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="141" x="1203" y="138.9951">diag1.excalidraw.svg</text><line style="stroke:#000000;stroke-width:1.0;" x1="1198" x2="1382" y1="144.2969" y2="144.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="174" x="1203" y="159.292">subdir1_diag1.drawio.svg</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="184" x="1198" y="124"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="68" x="1080" y="183.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="36" x="1085" y="198.3467">misc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="1131" y="198.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1126" x2="1126" y1="183.3516" y2="203.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="68" x="1080" y="183.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="85" x="1247.5" y="183"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="75" x="1252.5" y="197.9951">yaml1.yaml</text><line style="stroke:#000000;stroke-width:1.0;" x1="1247.5" x2="1332.5" y1="203.2969" y2="203.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="56" x="1252.5" y="218.292">text1.txt</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="85" x="1247.5" y="183"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="92" x="797" y="227.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="60" x="802" y="242.3467">subdir1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="872" y="242.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="867" x2="867" y1="227.3516" y2="247.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="92" x="797" y="227.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="64" x="956" y="217"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="961" y="231.9951">file1.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="956" x2="1020" y1="237.2969" y2="237.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="961" y="252.292">file2.md</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="64" x="956" y="217"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="53" x="143.5" y="350"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="148.5" y="364.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="143.5" x2="196.5" y1="370.2969" y2="370.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="43" x="148.5" y="385.292">topic2</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="53" x="143.5" y="350"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="81" x="261.5" y="350.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="49" x="266.5" y="365.3467">topic1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="325.5" y="365.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="320.5" x2="320.5" y1="350.3516" y2="370.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="81" x="261.5" y="350.3516"></rect><rect fill="#F1F1F1" height="202.9688" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="96" x="388" y="259"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="18" x="393" y="273.9951">ref</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="279.2969" y2="279.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="25" x="393" y="294.292">img</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="299.5938" y2="299.5938"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="63" x="393" y="314.5889">solutions</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="319.8906" y2="319.8906"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="393" y="334.8857">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="340.1875" y2="340.1875"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="393" y="355.1826">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="360.4844" y2="360.4844"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="25" x="393" y="375.4795">nyu</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="380.7813" y2="380.7813"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="61" x="393" y="395.7764">coursera</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="401.0781" y2="401.0781"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="47" x="393" y="416.0732">udemy</text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="421.375" y2="421.375"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="393" y="436.3701">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="484" y1="441.6719" y2="441.6719"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="86" x="393" y="456.667">README.md</text><rect fill="none" height="202.9688" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="96" x="388" y="259"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="70" x="528" y="317.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="38" x="533" y="332.3467">docs</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="581" y="332.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="576" x2="576" y1="317.3516" y2="337.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="70" x="528" y="317.3516"></rect><rect fill="#F1F1F1" height="81.1875" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="61" x="667" y="285.9063"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="672" y="300.9014">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="667" x2="728" y1="306.2031" y2="306.2031"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="46" x="672" y="321.1982">iitb.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="667" x2="728" y1="326.5" y2="326.5"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="51" x="672" y="341.4951">nyu.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="667" x2="728" y1="346.7969" y2="346.7969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="672" y="361.792">   </text><rect fill="none" height="81.1875" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="61" x="667" y="285.9063"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="58" x="814" y="286.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="26" x="819" y="301.3467">res</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="855" y="301.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="850" x2="850" y1="286.3516" y2="306.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="58" x="814" y="286.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="22" x="977" y="276"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="982" y="290.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="977" x2="999" y1="296.2969" y2="296.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="982" y="311.292">   </text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="22" x="977" y="276"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="60" x="1084" y="267.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="28" x="1089" y="282.3467">img</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="1127" y="282.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1122" x2="1122" y1="267.3516" y2="287.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="60" x="1084" y="267.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="193" x="1193.5" y="252"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="141" x="1198.5" y="266.9951">diag1.excalidraw.svg</text><line style="stroke:#000000;stroke-width:1.0;" x1="1193.5" x2="1386.5" y1="272.2969" y2="272.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="183" x="1198.5" y="287.292">coursera_diag1.drawio.svg</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="193" x="1193.5" y="252"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="68" x="1080" y="311.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="36" x="1085" y="326.3467">misc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="1131" y="326.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1126" x2="1126" y1="311.3516" y2="331.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="68" x="1080" y="311.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="85" x="1247.5" y="311"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="75" x="1252.5" y="325.9951">yaml1.yaml</text><line style="stroke:#000000;stroke-width:1.0;" x1="1247.5" x2="1332.5" y1="331.2969" y2="331.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="56" x="1252.5" y="346.292">text1.txt</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="85" x="1247.5" y="311"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="103" x="791.5" y="345.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="71" x="796.5" y="360.3467">coursera</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="877.5" y="360.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="872.5" x2="872.5" y1="345.3516" y2="365.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="103" x="791.5" y="345.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="64" x="956" y="335"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="961" y="349.9951">file1.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="956" x2="1020" y1="355.2969" y2="355.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="961" y="370.292">file2.md</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="64" x="956" y="335"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="56" x="535" y="369.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="24" x="540" y="384.3467">iitb</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="574" y="384.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="569" x2="569" y1="369.3516" y2="389.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="56" x="535" y="369.3516"></rect><rect fill="#F1F1F1" height="101.4844" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="70" x="662.5" y="405.7578"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="667.5" y="420.7529">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="662.5" x2="732.5" y1="426.0547" y2="426.0547"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="667.5" y="441.0498">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="662.5" x2="732.5" y1="446.3516" y2="446.3516"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="667.5" y="461.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="662.5" x2="732.5" y1="466.6484" y2="466.6484"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="667.5" y="481.6436">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="662.5" x2="732.5" y1="486.9453" y2="486.9453"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="60" x="667.5" y="501.9404">info.yaml</text><rect fill="none" height="101.4844" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="70" x="662.5" y="405.7578"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="68" x="809" y="399.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="36" x="814" y="414.3467">prev</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="860" y="414.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="855" x2="855" y1="399.3516" y2="419.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="68" x="809" y="399.3516"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="46" x="965" y="394.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="36" x="970" y="409.3467">2019</text><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="46" x="965" y="394.3516"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="95" x="795.5" y="440.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="63" x="800.5" y="455.3467">material</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="873.5" y="455.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="868.5" x2="868.5" y1="440.3516" y2="460.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="95" x="795.5" y="440.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="94" x="941" y="433"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="84" x="946" y="447.9951">lecture1.ppt</text><line style="stroke:#000000;stroke-width:1.0;" x1="941" x2="1035" y1="453.2969" y2="453.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="83" x="946" y="468.292">lecture2.pdf</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="94" x="941" y="433"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="106" x="790" y="488.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="74" x="795" y="503.3467">problems</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="879" y="503.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="874" x2="874" y1="488.3516" y2="508.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="106" x="790" y="488.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="74" x="951" y="492"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="59" x="956" y="506.9951">ass1.pdf</text><line style="stroke:#000000;stroke-width:1.0;" x1="951" x2="1025" y1="512.2969" y2="512.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="64" x="956" y="527.292">quiz1.pdf</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="74" x="951" y="492"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="104" x="791" y="547.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="72" x="796" y="562.3467">solutions</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="878" y="562.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="873" x2="873" y1="547.3516" y2="567.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="104" x="791" y="547.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="110" x="933" y="551"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="95" x="938" y="565.9951">soln_ass1.pdf</text><line style="stroke:#000000;stroke-width:1.0;" x1="933" x2="1043" y1="571.2969" y2="571.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="100" x="938" y="586.292">soln_quiz1.pdf</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="110" x="933" y="551"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="74" x="526" y="485.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="42" x="531" y="500.3467">solve</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="583" y="500.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="578" x2="578" y1="485.3516" y2="505.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="74" x="526" y="485.3516"></rect><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="78" x="658.5" y="525"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="68" x="663.5" y="539.9951">book_ch1</text><line style="stroke:#000000;stroke-width:1.0;" x1="658.5" x2="736.5" y1="545.2969" y2="545.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="68" x="663.5" y="560.292">book_ch2</text><line style="stroke:#000000;stroke-width:1.0;" x1="658.5" x2="736.5" y1="565.5938" y2="565.5938"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="60" x="663.5" y="580.5889">iitb_ass1</text><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="78" x="658.5" y="525"></rect><rect fill="#F1F1F1" height="142.0781" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="92" x="124" y="480.4609"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="33" x="129" y="495.4561">build</text><line style="stroke:#000000;stroke-width:1.0;" x1="124" x2="216" y1="500.7578" y2="500.7578"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="129" y="515.7529">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="124" x2="216" y1="521.0547" y2="521.0547"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="65" x="129" y="536.0498">.gitignore</text><line style="stroke:#000000;stroke-width:1.0;" x1="124" x2="216" y1="541.3516" y2="541.3516"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="82" x="129" y="556.3467">mkdocs.yml</text><line style="stroke:#000000;stroke-width:1.0;" x1="124" x2="216" y1="561.6484" y2="561.6484"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="34" x="129" y="576.6436">tools</text><line style="stroke:#000000;stroke-width:1.0;" x1="124" x2="216" y1="581.9453" y2="581.9453"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="68" x="129" y="596.9404">script1.sh</text><line style="stroke:#000000;stroke-width:1.0;" x1="124" x2="216" y1="602.2422" y2="602.2422"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="129" y="617.2373">   </text><rect fill="none" height="142.0781" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="92" x="124" y="480.4609"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="84" x="260" y="500.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="52" x="265" y="515.3467">assets</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="327" y="515.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="322" x2="322" y1="500.3516" y2="520.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="84" x="260" y="500.3516"></rect><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="45" x="413.5" y="480"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="11" x="418.5" y="494.9951">js</text><line style="stroke:#000000;stroke-width:1.0;" x1="413.5" x2="458.5" y1="500.2969" y2="500.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="24" x="418.5" y="515.292">css</text><line style="stroke:#000000;stroke-width:1.0;" x1="413.5" x2="458.5" y1="520.5938" y2="520.5938"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="35" x="418.5" y="535.5889">fonts</text><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="45" x="413.5" y="480"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="70" x="267" y="611.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="38" x="272" y="626.3467">docs</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="320" y="626.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="315" x2="315" y1="611.3516" y2="631.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="70" x="267" y="611.3516"></rect><rect fill="#F1F1F1" height="142.0781" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="73" x="399.5" y="559.4609"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="11" x="404.5" y="574.4561">js</text><line style="stroke:#000000;stroke-width:1.0;" x1="399.5" x2="472.5" y1="579.7578" y2="579.7578"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="24" x="404.5" y="594.7529">css</text><line style="stroke:#000000;stroke-width:1.0;" x1="399.5" x2="472.5" y1="600.0547" y2="600.0547"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="35" x="404.5" y="615.0498">fonts</text><line style="stroke:#000000;stroke-width:1.0;" x1="399.5" x2="472.5" y1="620.3516" y2="620.3516"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="25" x="404.5" y="635.3467">img</text><line style="stroke:#000000;stroke-width:1.0;" x1="399.5" x2="472.5" y1="640.6484" y2="640.6484"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="63" x="404.5" y="655.6436">index.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="399.5" x2="472.5" y1="660.9453" y2="660.9453"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="404.5" y="675.9404">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="399.5" x2="472.5" y1="681.2422" y2="681.2422"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="41" x="404.5" y="696.2373">rough</text><rect fill="none" height="142.0781" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="73" x="399.5" y="559.4609"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="81" x="522.5" y="661.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="49" x="527.5" y="676.3467">topic1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="586.5" y="676.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="581.5" x2="581.5" y1="661.3516" y2="681.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="81" x="522.5" y="661.3516"></rect><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="96" x="649.5" y="641"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="654.5" y="655.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="649.5" x2="745.5" y1="661.2969" y2="661.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="86" x="654.5" y="676.292">README.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="649.5" x2="745.5" y1="681.5938" y2="681.5938"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="654.5" y="696.5889">   </text><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="96" x="649.5" y="641"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="58" x="814" y="633.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="26" x="819" y="648.3467">res</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="855" y="648.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="850" x2="850" y1="633.3516" y2="653.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="58" x="814" y="633.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="22" x="977" y="614"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="982" y="628.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="977" x2="999" y1="634.2969" y2="634.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="982" y="649.292">   </text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="22" x="977" y="614"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="60" x="1084" y="604.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="28" x="1089" y="619.3467">img</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="1127" y="619.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1122" x2="1122" y1="604.3516" y2="624.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="60" x="1084" y="604.3516"></rect><rect fill="#F1F1F1" height="81.1875" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="210" x="1185" y="563.9063"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="141" x="1190" y="578.9014">diag1.excalidraw.svg</text><line style="stroke:#000000;stroke-width:1.0;" x1="1185" x2="1395" y1="584.2031" y2="584.2031"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="200" x="1190" y="599.1982">subdir1_diag1.excalidraw.svg</text><line style="stroke:#000000;stroke-width:1.0;" x1="1185" x2="1395" y1="604.5" y2="604.5"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="56" x="1190" y="619.4951">ss1.png</text><line style="stroke:#000000;stroke-width:1.0;" x1="1185" x2="1395" y1="624.7969" y2="624.7969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="115" x="1190" y="639.792">subdir1_ss1.png</text><rect fill="none" height="81.1875" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="210" x="1185" y="563.9063"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="68" x="1080" y="653.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="36" x="1085" y="668.3467">misc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="1131" y="668.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1126" x2="1126" y1="653.3516" y2="673.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="68" x="1080" y="653.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="85" x="1247.5" y="663"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="75" x="1252.5" y="677.9951">yaml1.yaml</text><line style="stroke:#000000;stroke-width:1.0;" x1="1247.5" x2="1332.5" y1="683.2969" y2="683.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="56" x="1252.5" y="698.292">text1.txt</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="85" x="1247.5" y="663"></rect><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="92" x="797" y="682.3516"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="60" x="802" y="697.3467">subdir1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="12" x="872" y="697.3467">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="867" x2="867" y1="682.3516" y2="702.6484"></line><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="92" x="797" y="682.3516"></rect><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="64" x="956" y="673"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="961" y="687.9951">file1.md</text><line style="stroke:#000000;stroke-width:1.0;" x1="956" x2="1020" y1="693.2969" y2="693.2969"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="961" y="708.292">file2.md</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="64" x="956" y="673"></rect><path d="M580.5,30.5 L593.5,30.5 C613.4678,30.5 635.6025,30.5 654.2604,30.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M654.2604,33.6068 L656.5904,30.5 L654.2604,27.3932 L662.0273,30.5 L654.2604,33.6068 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="580.5" cy="30.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M472,30.5 L485,30.5 C498.8343,30.5 514.0578,30.5 527.3228,30.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M527.3228,33.5234 L529.5904,30.5 L527.3228,27.4766 L534.8814,30.5 L527.3228,33.5234 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="472" cy="30.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M593,90.5 L606,90.5 C626.5505,90.5 649.7116,90.5 667.5245,90.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M667.5245,93.6117 L669.8583,90.5 L667.5245,87.3883 L675.3038,90.5 L667.5245,93.6117 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="593" cy="90.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M472,91.5 L485,91.5 C494.3435,91.5 504.3201,91.4264 513.899,91.3192 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M513.9359,94.35 L516.1721,91.2915 L513.862,88.2884 L521.476,91.2267 L513.9359,94.35 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="472" cy="91.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M587.5,150.5 L600.5,150.5 C617.0195,150.5 635.0279,148.889 650.9663,146.9001 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M651.3668,149.9571 L653.259,146.5997 L650.5657,143.8431 L658.6087,145.8987 L651.3668,149.9571 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="587.5" cy="150.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M472,172.5 L485,172.5 C500.9599,172.5 518.0899,168.129 532.1758,163.2836 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M533.1984,166.1101 L534.2957,162.5166 L531.1533,160.457 L539.2421,160.7271 L533.1984,166.1101 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="472" cy="172.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M1132.5,149.5 L1145.5,149.5 C1160.0918,149.5 1175.5103,149.2404 1190.6212,148.8395 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1190.7099,151.9867 L1192.9816,148.7729 L1190.5324,145.6923 L1198.4891,148.6176 L1190.7099,151.9867 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="1132.5" cy="149.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M987.5,168.5 L1000.5,168.5 C1026.3032,168.5 1054.9676,163.6225 1076.9698,158.81 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1077.6464,161.8056 L1079.2165,158.3025 L1076.2933,155.8144 L1084.4588,157.1185 L1077.6464,161.8056 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="987.5" cy="168.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M1136,193.5 L1149,193.5 C1179.2695,193.5 1213.115,195.8379 1240.0015,198.2529 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1239.7154,201.3523 L1242.3261,198.4675 L1240.2876,195.1535 L1247.7501,198.9681 L1239.7154,201.3523 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="1136" cy="193.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M987.5,188.5 L1000.5,188.5 C1024.4605,188.5 1051.2509,189.6358 1072.7306,190.8248 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1072.5552,193.8881 L1075.028,190.9563 L1072.906,187.7615 L1080.3888,191.2632 L1072.5552,193.8881 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="987.5" cy="188.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M860.5,178.5 L873.5,178.5 C907.5463,178.5 947.3121,178.5 969.7375,178.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M969.7375,181.5791 L972.0468,178.5 L969.7375,175.4209 L977.4352,178.5 L969.7375,181.5791 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="860.5" cy="178.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M741,178.5 L754,178.5 C771.2972,178.5 790.496,178.5 806.5788,178.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M806.5788,181.5492 L808.8657,178.5 L806.5788,175.4508 L814.2018,178.5 L806.5788,181.5492 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="741" cy="178.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M877.5,237.5 L890.5,237.5 C909.6308,237.5 930.884,237.5 948.6087,237.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M948.6087,240.6501 L950.9712,237.5 L948.6087,234.3499 L956.4839,237.5 L948.6087,240.6501 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="877.5" cy="237.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M741,238.5 L754,238.5 C765.5962,238.5 778.0465,238.4131 789.8396,238.2905 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M789.8737,241.3462 L792.1314,238.265 L789.8056,235.2348 L797.4789,238.2054 L789.8737,241.3462 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="741" cy="238.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M586.5,200.5 L599.5,200.5 C610.9244,200.5 623.0766,201.0523 634.7854,201.8667 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M634.5574,204.914 L637.0709,202.0377 L635.0133,198.8194 L642.4036,202.4366 L634.5574,204.914 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="586.5" cy="200.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M472,192.5 L485,192.5 C496.5397,192.5 508.995,193.3885 520.4742,194.5732 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M520.1301,197.6804 L522.8045,194.8313 L520.8183,191.466 L528.2421,195.4335 L520.1301,197.6804 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="472" cy="192.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M339,166.5 L352,166.5 C361.9732,166.5 371.9009,163.9815 381.2464,160.1361 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M382.5182,162.9458 L383.3536,159.1823 L379.9746,157.3265 L388.2705,156.9567 L382.5182,162.9458 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="339" cy="166.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M192.5,256.5 L205.5,256.5 C247.6821,256.5 278.956,209.6815 293.1135,183.5805 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M295.816,184.9941 L294.1737,181.5536 L290.411,182.1668 L296.6476,176.8241 L295.816,184.9941 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="192.5" cy="256.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M75,350.5 L88,350.5 C120.1316,350.5 143.6646,318.4489 156.9617,293.943 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M159.6333,295.334 L158.005,291.9393 L154.2901,292.5519 L160.4394,287.2641 L159.6333,295.334 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="75" cy="350.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M1132.5,277.5 L1145.5,277.5 C1158.6915,277.5 1172.5587,277.2878 1186.2635,276.9509 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1186.3433,279.9876 L1188.541,276.8911 L1186.1837,273.9142 L1193.8552,276.7514 L1186.3433,279.9876 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="1132.5" cy="277.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M987.5,286.5 L1000.5,286.5 C1026.0266,286.5 1054.6947,284.1896 1076.7679,281.91 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1077.0884,284.9166 L1079.0228,281.6696 L1076.4474,278.9034 L1084.2844,281.1088 L1077.0884,284.9166 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="987.5" cy="286.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M1136,321.5 L1149,321.5 C1179.2695,321.5 1213.115,323.8379 1240.0015,326.2529 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1239.7154,329.3523 L1242.3261,326.4675 L1240.2876,323.1535 L1247.7501,326.9681 L1239.7154,329.3523 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="1136" cy="321.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M987.5,306.5 L1000.5,306.5 C1024.4708,306.5 1051.0551,309.858 1072.4136,313.3963 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1071.8912,316.4435 L1074.699,313.7881 L1072.9359,310.3492 L1080.0315,314.7022 L1071.8912,316.4435 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="987.5" cy="306.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M860.5,296.5 L873.5,296.5 C907.5463,296.5 947.3121,296.5 969.7375,296.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M969.7375,299.5791 L972.0468,296.5 L969.7375,293.4209 L977.4352,296.5 L969.7375,299.5791 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="860.5" cy="296.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M717,296.5 L730,296.5 C755.6828,296.5 784.6637,296.5 806.7783,296.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M806.7783,299.5077 L809.034,296.5 L806.7783,293.4923 L814.2974,296.5 L806.7783,299.5077 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="717" cy="296.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M883.5,355.5 L896.5,355.5 C913.6069,355.5 932.5228,355.5 948.6568,355.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M948.6568,358.5707 L950.9598,355.5 L948.6568,352.4293 L956.3336,355.5 L948.6568,358.5707 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="883.5" cy="355.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M717,356.5 L730,356.5 C747.5308,356.5 766.5975,356.3771 783.9684,356.2174 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M783.9986,359.3575 L786.3235,356.1947 L783.9381,353.0773 L791.8186,356.1418 L783.9986,359.3575 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="717" cy="356.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M586.5,327.5 L599.5,327.5 C619.348,327.5 641.4677,327.2902 659.6145,327.0628 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M659.6537,330.0692 L661.8692,327.0334 L659.5753,324.0565 L667.1303,326.9649 L659.6537,330.0692 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="586.5" cy="327.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M472,330.5 L485,330.5 C496.4873,330.5 508.9251,330.1668 520.4043,329.7225 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M520.5333,332.8307 L522.7354,329.6258 L520.2752,326.6144 L528.1748,329.3999 L520.5333,332.8307 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="472" cy="330.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M865.5,409.5 L878.5,409.5 C905.3258,409.5 935.8262,407.9701 957.7276,406.6028 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M957.9249,409.6656 L960.0248,406.4548 L957.5304,403.5399 L965.3848,406.1096 L957.9249,409.6656 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="865.5" cy="409.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M721,415.5 L734,415.5 C756.4161,415.5 781.3977,414.2074 801.7341,412.8222 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M801.9473,415.8428 L803.9996,412.6623 L801.5209,409.8015 L809.2857,412.2892 L801.9473,415.8428 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="721" cy="415.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M879.5,450.5 L892.5,450.5 C905.7423,450.5 920.0177,450.7948 933.3772,451.1996 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M933.2774,454.2977 L935.7008,451.2745 L933.4771,448.1015 L941.1225,451.4492 L933.2774,454.2977 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="879.5" cy="450.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M721,436.5 L734,436.5 C751.7057,436.5 770.9041,438.3565 788.1601,440.7174 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M787.714,443.8291 L790.494,441.052 L788.6063,437.6056 L795.9395,441.8327 L787.714,443.8291 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="721" cy="436.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M884,498.5 L897,498.5 C912.2988,498.5 928.8831,500.4781 943.625,502.9471 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M943.0937,505.9569 L945.8823,503.3455 L944.1562,499.9373 L951.1495,504.2752 L943.0937,505.9569 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="884" cy="498.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M721,456.5 L734,456.5 C750.1315,456.5 788.3711,472.8502 814.8511,485.1478 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M813.5771,487.865 L816.889,486.1034 L816.1252,482.4306 L821.6442,488.333 L813.5771,487.865 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="721" cy="456.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M883.5,557.5 L896.5,557.5 C905.9596,557.5 915.9086,558.2482 925.6153,559.3986 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M925.2144,562.486 L927.9309,559.6992 L926.0162,556.3111 L933.334,560.4008 L925.2144,562.486 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="883.5" cy="557.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M721,476.5 L734,476.5 C735.3648,476.5 791.8928,519.1606 822.7988,542.5622 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M820.9272,545.0331 L824.6519,543.966 L824.6704,540.0914 L828.9758,547.2413 L820.9272,545.0331 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="721" cy="476.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M579.5,379.5 L592.5,379.5 C616.7961,379.5 639.1622,393.1568 656.9147,408.9675 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M654.7436,411.3034 L658.6666,410.5958 L659.0859,406.6316 L662.7544,414.3953 L654.7436,411.3034 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="579.5" cy="379.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M472,350.5 L485,350.5 C503.889,350.5 523.819,358.1501 538.7379,365.5919 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M537.297,368.3498 L540.8063,366.6726 L540.1787,362.834 L545.6326,369.194 L537.297,368.3498 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="472" cy="350.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M588.5,495.5 L601.5,495.5 C607.6261,495.5 630.585,509.8387 652.4552,524.497 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M650.7205,527.068 L654.3835,525.798 L654.1899,521.926 L658.8828,528.8337 L650.7205,527.068 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="588.5" cy="495.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M472,431.5 L485,431.5 C514.6835,431.5 539.1381,459.759 552.2062,478.7213 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M549.6079,480.4365 L553.4926,480.6701 L554.8046,477.0061 L556.4942,485.2173 L549.6079,480.4365 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="472" cy="431.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M331.5,360.5 L344.5,360.5 C356.1638,360.5 368.6686,360.5 380.5592,360.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M380.5592,363.584 L382.8722,360.5 L380.5592,357.416 L388.2693,360.5 L380.5592,363.584 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="331.5" cy="360.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M185.5,360.5 L198.5,360.5 C216.6432,360.5 236.5841,360.5 254.0477,360.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M254.0477,363.6337 L256.398,360.5 L254.0477,357.3663 L261.8819,360.5 L254.0477,363.6337 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="185.5" cy="360.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M75,370.5 L88,370.5 C103.7588,370.5 121.2316,370.5 135.9442,370.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M135.9442,373.6445 L138.3026,370.5 L135.9442,367.3555 L143.8055,370.5 L135.9442,373.6445 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="75" cy="370.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M332.5,510.5 L345.5,510.5 C365.6892,510.5 388.4259,510.5 405.9953,510.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M405.9953,513.5724 L408.2997,510.5 L405.9953,507.4276 L413.6764,510.5 L405.9953,513.5724 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="332.5" cy="510.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M204,510.5 L217,510.5 C228.5527,510.5 240.9939,510.5 252.6837,510.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M252.6837,513.5226 L254.9507,510.5 L252.6837,507.4774 L260.2402,510.5 L252.6837,513.5226 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="204" cy="510.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M1132.5,614.5 L1145.5,614.5 C1155.9861,614.5 1166.8915,614.2328 1177.7989,613.7858 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1177.9337,616.8044 L1180.0628,613.6847 L1177.664,610.7673 L1185.3453,613.4487 L1177.9337,616.8044 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="1132.5" cy="614.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M987.5,624.5 L1000.5,624.5 C1026.0454,624.5 1054.7133,621.9329 1076.7816,619.4 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1077.1377,622.4059 L1079.0361,619.1329 L1076.4256,616.3941 L1084.2963,618.5098 L1077.1377,622.4059 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="987.5" cy="624.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M1136,663.5 L1149,663.5 C1179.6284,663.5 1213.6411,668.2161 1240.5291,673.068 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1239.9817,676.0224 L1242.7449,673.4785 L1241.0764,670.1135 L1247.9152,674.4363 L1239.9817,676.0224 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="1136" cy="663.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M987.5,644.5 L1000.5,644.5 C1024.5959,644.5 1051.187,648.7534 1072.5178,653.2354 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M1071.8561,656.2779 L1074.7997,653.7316 L1073.1794,650.1928 L1080.1241,654.8895 L1071.8561,656.2779 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="987.5" cy="644.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M860.5,643.5 L873.5,643.5 C907.6522,643.5 947.3816,639.4361 969.7717,636.77 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M970.1485,639.8438 L972.0771,636.4874 L969.3949,633.6962 L977.4562,635.828 L970.1485,639.8438 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="860.5" cy="643.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M734,651.5 L747,651.5 C766.6224,651.5 788.4337,649.8021 806.2525,647.9707 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M806.5906,651.1243 L808.6177,647.7171 L805.9144,644.8172 L814.1364,647.1255 L806.5906,651.1243 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="734" cy="651.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M877.5,692.5 L890.5,692.5 C909.6318,692.5 930.8851,692.6969 948.6096,692.916 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M948.569,696.066 L950.9721,692.9465 L948.6503,689.766 L956.4847,693.0176 L948.569,696.066 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="877.5" cy="692.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M734,691.5 L747,691.5 C760.8501,691.5 775.8295,691.6065 789.7266,691.7499 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M789.6934,694.788 L792.0052,691.7748 L789.7598,688.7118 L797.3218,691.833 L789.6934,694.788 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="734" cy="691.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M592.5,671.5 L605.5,671.5 C617.3582,671.5 630.0809,671.5 642.1556,671.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M642.1556,674.6303 L644.5033,671.5 L642.1556,668.3697 L649.9812,671.5 L642.1556,674.6303 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="592.5" cy="671.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M461.5,671.5 L474.5,671.5 C487.6544,671.5 501.9149,671.5 515.0494,671.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M515.0494,674.5346 L517.3253,671.5 L515.0494,668.4654 L522.6358,671.5 L515.0494,674.5346 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="461.5" cy="671.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M325.5,621.5 L338.5,621.5 C356.0997,621.5 375.4191,622.9871 392.1519,624.7524 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M391.8214,627.7486 L394.3991,625.0003 L392.4824,621.7561 L399.6425,625.5787 L391.8214,627.7486 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="325.5" cy="621.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M204,612.5 L217,612.5 C230.9359,612.5 246.0923,613.7254 259.6711,615.2718 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M259.2948,618.3884 L262.0086,615.5541 L260.0474,612.1552 L267.4627,616.2126 L259.2948,618.3884 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="204" cy="612.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><path d="M77,388.5 L77,401.5 C77,438.4771 97.6169,473.9726 119.3839,501.1439 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"></path><path d="M116.9762,503.1239 L120.8689,502.9496 L121.7915,499.1639 L124.3339,507.163 L116.9762,503.1239 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"></path><ellipse cx="77" cy="388.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse></g></svg></div>
+<pre class="mermaid"><code>flowchart TD
+    A --&gt; B</code></pre>
+<h3 id="feature-4">Feature 4</h3>
+<p>For point 4 in <a href="#features"><strong>Features</strong></a></p>
+<p>The export to pdf will not allow me to use internal links to separate documents from one doc because one pdf cannot open another pdf.
+There has to be a conversion mechanism so that I can use internal links to different docs in HTML but also use the same docs to create a single pdf that can reference internal links using heading attributes.</p>
+<p>To solve this I have narrowed down my docs setup support to:</p>
+<ol>
+<li>Mkdocs HTML</li>
+<li>Pandocs HTML</li>
+<li>Pandocs PDF</li>
+</ol>
+<p>Also, for reference you can look at:</p>
+<ol>
+<li>Marked 2 multidoc pdf conversion</li>
+<li>Readthedocs pdf conversion</li>
+</ol>
+<h3 id="feature-5">Feature 5</h3>
+<p>For simple and quick diagrams: Excalidraw
+For detailed diagrams: Draw.io
+It should be possible to draw without internet.</p>
+<p>Excalidraw mostly requires internet but there is a plugin for vscode that enables offline use.
+You can edit ".excalidraw.svg", ".excalidraw.png" and ".excalidraw" files using the plugin.
+The ".excalidraw.svg" and ".excalidraw.png" files can be rendered in md files as well as edited using plugin, so I will be working with these files.
+".excalidraw" files can be edited using plugin but not rendered in md files.</p>
+<h5 id="svg-or-png">SVG or PNG</h5>
+<p>Check support for SVG and PNG in all docs that you want to support</p>
+<p>Mac Screenshots are in PNG. This can be changed to any format.
+import from iphone is jpeg.</p>
+<p>Excalidraw vscode extension has an issue due to which existing <code>.excalidraw.svg</code> or '.excalidraw.png' files once edited and saved, the arrows lose the clipping around its text. Issue has been raised on Github.</p>
+<p>SVG files have to be standalone when embedded in html due to security reasons. Refer <a href="https://stackoverflow.com/questions/29494271/svg-fonts-are-not-loading-on-a-webpage-using-font-face-in-chrome">[4]</a>.
+The SVG files created by excalidraw import the font from the internet. The excalidraw font won't be rendered in HTML pages due to this.
+A good guide on svg fonts <a href="https://css-tricks.com/using-custom-fonts-with-svg-in-an-image-tag/">[5]</a></p>
+<p>In Pandoc MD to HTML conversion, SVG images require rsvg-convert tool to be installed.
+To install this tool:
+<div class="language-text highlight"><pre><span></span><code>brew install librsvg
+</code></pre></div></p>
+<p>Will have to use PNG since font fetching from SVG is not allowed in browsers. So excalidraw svg diagrams will not work.
+Other option is to embed font in SVG which would increase size of image. There is no such native option in excalidraw. Will have to write a script to replace the font URL by data uri of font automatically.
+The file size of embedded font can be reduced by minifying the svg but this is getting too complex. Just go with PNG.</p>
+<p>The 1x, 2x, 3x options in excali export can be used for getting higher resolution PNGs as checked.
+Also the file size of PNGs seem to be very large compared to SVG. PFB.</p>
+<p>-rw-r--r--@ 1 saurabhrajguru  staff    60K Mar 10 18:21 Virgil.woff2
+-rw-------@ 1 saurabhrajguru  staff   228K Mar 10 18:07 orp_flow.excalidraw.png
+-rw-------@ 1 saurabhrajguru  staff    30K Mar 10 20:16 orp_flow.excalidraw.svg
+-rw-r--r--@ 1 saurabhrajguru  staff   583K Mar 10 18:04 orp_flow@2x.excalidraw.png</p>
+<p>To use the small sizes I will try using inline SVG.
+Inline SVG allows using css attributes and importing assets as they become part of the HTML and are not in image tags.
+Install mkdocs-inline-svg plugin.
+This plugin replaces the svg reference in the markdown file with the SVG file's content.
+It doesn't work if the SVG has newlines as it puts a <code>&lt;br/&gt;</code> in place of newlines which breaks the rendering of the SVG image.
+To sove this run the below command on the svg file to remove newlines.
+<div class="language-sh highlight"><pre><span></span><code>tr<span class="w"> </span>-d<span class="w"> </span><span class="s1">'\n'</span><span class="w"> </span>&lt;<span class="w"> </span>file.excalidraw.svg<span class="w"> </span>&gt;<span class="w"> </span>temp<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>mv<span class="w"> </span>temp<span class="w"> </span>file.excalidraw.svg
+</code></pre></div></p>
+<p>Two font assets are referenced in ecalidraw generated SVGs: Virgil and Cascadia.
+Only Virgil is being used in the SVG as I have checked.
+To use it without internet, you need to replace the reference in the svg file from internet URL to local font file.
+Downloaded the Virgil font file from <a href="https://unpkg.com/@excalidraw/excalidraw@0.14.1/dist/excalidraw-assets/Virgil.woff2" title="excalidraw;asset">Virgil</a>. 
+Saved it in the <code>diagrams/excalidraw/</code> folder of particular note directory.
+Commented the internet font request and put the local font file as the reference. </p>
+<p>Another method to load the font is to use css instead of referencing the font in each excalidraw svg image.
+Also, the inline svg does not fit into the rendered html. (Maybe it does - it is working after commenting <code>excalidraw.css</code> import in mkdocs.yml)
+Have added <code>excalidraw.css</code> in <code>docs/css_mkdocs</code> folder for the above two points.</p>
+<p>As you can see this is a manual process, you can edit the inline-svg plugin to remove the newlines and adding the local font reference while reading the .excalidraw.svg file without editing the excalidraw generated SVG in the file system. Source code is at: <a href="https://gitlab.com/nicolas.dupont/mkdocs-plugin-inline-svg" title="mkdocs;inline-svg">mkdocs-inline-ext-svg</a>.</p>
+<p>Have resolved the manual process:</p>
+<h3 id="issue-2">Issue 2</h3>
+<p>Issue resolved by using <code>superfences</code> extension in mkdocs. Superfences changes the html format of code blocks due to which language syntax highlighting starts failing with highlight.js that is used by default in mkdocs.
+To resolve this <code>highlight</code> extension has been added which use an extra css file generated by pygments to highlight the html generated by <code>superfences</code>.
+To do this the css file is generated for html pages using the below command:</p>
+<div class="language-sh highlight"><pre><span></span><code>pygmentize<span class="w"> </span>-S<span class="w"> </span>default<span class="w"> </span>-f<span class="w"> </span>html<span class="w"> </span>&gt;<span class="w"> </span>pygments.css
+</code></pre></div>
+<p>pygments.css is placed in docs/ directory of mkdocs and this is referenced in mkdocs.yml as below:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span class="nt">extra_css</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">css_mkdocs/pygments.css</span>
+</code></pre></div>
+<h3 id="feature-6">Feature 6</h3>
+<p>Refer <a href="https://github.com/fralau/mkdocs-mermaid2-plugin#basic-configuration" title="mermaid;mkdocs;plugin">mermaid mkdocs plugin github site</a>
+Have downloaded the mermaid js script and added it to <code>docs/js_mkdocs</code> directory so that I can work with it locally
+It worked with 8.13.10 version. It doesn't work after that: &gt;= 8.14.0 
+Also copied the default config from <a href="https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/js/material-extra-3rdparty.js">https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/js/material-extra-3rdparty.js</a>
+Since I am using superfences I used a custom loader used in test/superfences/docs in <a href="https://github.com/fralau/mkdocs-mermaid2-plugin#basic-configuration" title="mermaid;mkdocs;plugin">mermaid mkdocs plugin site</a>. This loader is copied from pymdownx extension site as mentioned in the docs.</p>
+<div class="language-sh highlight"><pre><span></span><code>curl<span class="w"> </span>https://unpkg.com/mermaid@8.13.10/dist/mermaid.min.js<span class="w"> </span>-o<span class="w"> </span>docs/js_mkdocs/mermaid@8.13.10.min.js
+</code></pre></div>
+<p>This is referenced in mkdocs.yml as below</p>
+<div class="language-yaml highlight"><pre><span></span><code><span class="nt">extra_javascript</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">js_mkdocs/mermaid_config.js</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">js_mkdocs/mermaid@8.13.10.min.js</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">js_mkdocs/mermaid_loader.js</span>
+</code></pre></div>
+<p>There is a problem with mermaid that doesn't allow individual nodes in subgraphs to be connected to other subgraph nodes with the flow of graph intact. 
+Refer <a href="https://github.com/mermaid-js/mermaid/issues/2509" title="mermaid;issue">[6]</a></p>
+<p>Comparision between Mermaid and PlantUML:
+Diagrams created for ORP Prod architecture using mermaid and PlantUML to compare their features:
+<a href="../res/misc/orp_prod.mermaid">mermaid</a>
+<a href="../res/misc/orp_prod.puml">PlantUML</a></p>
+<p>Have installed <code>mkdocs_puml</code> plugin for PlantUML which uses online PlantUML server to render diagrams. Refer <a href="https://github.com/MikhailKravets/mkdocs_puml" title="mkdocs;puml;plugin"><code>mkdocs_puml</code></a>
+You can self host PlantUML on docker and point it to that to enable offline work.</p>
+<h3 id="a-note-on-diagramming-tools">A note on Diagramming tools</h3>
+<p>I did extensive reading on multiple diagramming tools, namely:</p>
+<ol>
+<li>
+<p>excalidraw
+    This tool is more like a rough whiteboard for initial design or collaborating on ideas.</p>
+<p>This does not support mermaid-js or PlantUML.</p>
+<p>Conclusion:
+I won't be using it in the note taking process as I believe I can draw faster using mermaid or PlantUML while taking notes. Also, drawio can be used for proper diagrams.
+Will use it for explaining to people (to write while drawing) or collab.</p>
+</li>
+<li>
+<p>diagrams.net (drawio)
+    Mermaid flowcharts can be added as code and individual components are rendered automatically.
+    PlantUML flowcharts can be added but they get added as a single shape. 
+    This can draw big beautiful diagrams with explicit control on placement.
+    Since drawio uses default fonts. I can just directly use the SVG generated by drawio without making them inline.</p>
+<p>Not so editable once created. You'll have to keep changing arrow lengths.
+drawio.svg can be edited in place but you will not able to understand the diffs in version control systems since it is an svg file.</p>
+<p>Conclusion:
+I will use this only if the diagram is finalised or if the diagram is very important.</p>
+</li>
+<li>
+<p>mermaid-js
+    As mermaid flowcharts can be added directly to drawio, it will also help with final diagram if required.
+    It is supported by Github and various other platforms.
+    Better for working with Web side since it is loaded as a JS file.</p>
+<p>Lesser control on layout and control on components.
+Version control can be implemented where diffs can be visualised. (Since it is just text!)</p>
+<p>Conclusion:
+Will use this for quick diagrams during note taking. </p>
+</li>
+<li>
+<p>PlantUML
+    Has more control on layout and component formatting than mermaid.
+    Also it offers a lot more features than mermaid.
+    Version control can be implemented where diffs can be visualised. (Since it is just text!)</p>
+<p>It is not supported by Github and other platforms.
+Gets added as a single shape in drawio.
+Requires java and GraphViz installation OR server running PlantUML in a container to work locally.</p>
+<p>Conclusion:
+Use it for quick technical diagrams while note taking. Good for implementing software modelling frameworks like UML and C4</p>
+</li>
+</ol>
+<p>I also did extensive reading on Modelling frameworks</p>
+<ol>
+<li>
+<p>UML
+    Broadly divided into: structure diagrams (static aspects) and behaviour diagrams (dynamic aspects)
+    PlantUML supports some
+    Mermaid supports fewer</p>
+</li>
+<li>
+<p><a href="https://c4model.com/" title="diagramming;c4;software;modelling">C4</a>
+    Broadly categorises modelling process into the below heirarchy:
+    System Context, Components, Container, Code</p>
+<p>PlantUML supports some C4 diagrams.</p>
+</li>
+</ol>
+<h3 id="feature-7">Feature 7</h3>
+<p>Arithmatex: Preserves math in markdown for later processing (Refer <a href="https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/" title="mkdocs;math">[12]</a>)
+Mathjax: Processes the Latex math to math output (Refer <a href="https://squidfunk.github.io/mkdocs-material/reference/mathjax/" title="mkdocs;math">[13]</a>)
+Added mathjax config, polyfill scripts and mathjax@3.2.2 folder to <code>docs/js_mkdocs/</code> folder. Same will be referenced in mkdocs.yml.
+The whole folder had to be added for mathjax because the main script references other files from the cdn (eg. fonts)
+Downloaded the es5 folder from <a href="https://github.com/mathjax/MathJax">https://github.com/mathjax/MathJax</a></p>
+<div class="language-bash highlight"><pre><span></span><code>curl<span class="w"> </span>-o<span class="w"> </span>docs/js_mkdocs/polyfill.min.js<span class="w"> </span><span class="s2">"https://polyfill.io/v3/polyfill.min.js?features=es6&amp;flags=always"</span>
+</code></pre></div>
+<p><span class="arithmatex">\(\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}\)</span></p>
+<hr/>
+<h2 id="folder-structure">Folder structure</h2>
+<p><svg filter="invert(93%) hue-rotate(180deg)" height="444.8880920410156" version="1.1" viewbox="0 0 876.416748046875 444.8880920410156" width="876.416748046875" xmlns="http://www.w3.org/2000/svg"> <rect fill="#ffffff" height="444.8880920410156" width="876.416748046875" x="0" y="0"></rect><g stroke-linecap="round" transform="translate(226.73095703125 10) rotate(0 201 54)"><path d="M27 0 M27 0 C128.07 -1.28, 227.66 -1.04, 375 0 M27 0 C146.48 -1.2, 266.54 -0.99, 375 0 M375 0 C392.44 1.27, 400.76 8.53, 402 27 M375 0 C391.06 1.49, 400.98 10.05, 402 27 M402 27 C401.31 37.18, 401.23 46.86, 402 81 M402 27 C402.55 39.39, 401.36 52.92, 402 81 M402 81 C401.92 100.97, 391.67 106.53, 375 108 M402 81 C401.01 100.51, 394.68 106.83, 375 108 M375 108 C239.27 107.92, 105.38 108.22, 27 108 M375 108 C280.8 107.99, 187.16 108.19, 27 108 M27 108 C9.2 106.38, -0.97 98.91, 0 81 M27 108 C7.02 106.83, -1.64 98.09, 0 81 M0 81 C0.06 63.01, -0.48 43.71, 0 27 M0 81 C-0.11 62.7, 0.9 43.46, 0 27 M0 27 C0.76 9.22, 10.24 -1.59, 27 0 M0 27 C1.33 10.09, 7.88 -1.15, 27 0" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(379.41100311279297 51.5) rotate(0 48.31995391845703 12.5)"><text direction="ltr" dominant-baseline="text-before-edge" fill="#000000" font-family="Virgil, Segoe UI Emoji" font-size="20px" style="white-space: pre;" text-anchor="middle" x="48.31995391845703" y="0">workspace</text></g><g stroke-linecap="round"><g transform="translate(241.1749157165022 131.98672485351562) rotate(0 -87.43882825936197 53.99931335449219)"><path d="M0.1 0.41 C-29.09 18.67, -146.52 90.82, -175.64 108.88 M-1.31 -0.42 C-30.07 17.57, -144.33 89.35, -173.33 107.22" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(241.1749157165022 131.98672485351562) rotate(0 -87.43882825936197 53.99931335449219)"><path d="M-154.15 82.33 C-158.22 90.03, -163.16 96.83, -173.41 107.13 M-154.96 82.9 C-159.13 89.39, -164.28 95.79, -172.51 107.62" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(241.1749157165022 131.98672485351562) rotate(0 -87.43882825936197 53.99931335449219)"><path d="M-143.3 99.75 C-150.06 103, -157.76 105.34, -173.41 107.13 M-144.1 100.32 C-150.72 102.84, -158.4 105.17, -172.51 107.62" fill="none" stroke="#000000" stroke-width="1"></path></g></g><mask></mask><g stroke-linecap="round"><g transform="translate(344.2534359611867 135.95547485351568) rotate(0 -27.192070095262295 50.81913757324216)"><path d="M-0.69 -0.65 C-9.7 16.05, -44.31 83.78, -53.29 100.72 M1.15 1.62 C-7.98 18.4, -44.24 85.05, -53.66 101.77" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(344.2534359611867 135.95547485351568) rotate(0 -27.192070095262295 50.81913757324216)"><path d="M-50.1 73.96 C-52.11 82.53, -53.34 94.19, -52.28 101.63 M-49.65 72.12 C-50.55 78.96, -51.31 84.86, -53.68 100.86" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(344.2534359611867 135.95547485351568) rotate(0 -27.192070095262295 50.81913757324216)"><path d="M-32.14 83.88 C-40.67 88.76, -48.4 96.84, -52.28 101.63 M-31.69 82.04 C-36.48 86.66, -41.15 90.4, -53.68 100.86" fill="none" stroke="#000000" stroke-width="1"></path></g></g><mask></mask><g transform="translate(10 249.6767578125) rotate(0 171.2098388671875 12.5)"><text direction="ltr" dominant-baseline="text-before-edge" fill="#000000" font-family="Virgil, Segoe UI Emoji" font-size="20px" style="white-space: pre;" text-anchor="start" x="0" y="0">Different work and project folders</text></g><g stroke-linecap="round"><g transform="translate(487.71433208740666 132.00234985351562) rotate(0 10.091836821640868 41.20414733886719)"><path d="M0.1 0.48 C3.44 14.39, 17.33 69.87, 20.63 83.55 M-1.3 -0.31 C1.86 13.28, 16.53 67.99, 19.92 82.03" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(487.71433208740666 132.00234985351562) rotate(0 10.091836821640868 41.20414733886719)"><path d="M3.79 58.01 C10.86 65.48, 15.14 74.48, 20.34 81.88 M3.01 57.78 C7.68 64.89, 14.45 73.56, 18.96 81.51" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(487.71433208740666 132.00234985351562) rotate(0 10.091836821640868 41.20414733886719)"><path d="M23.67 52.92 C23.77 62.19, 21.08 72.98, 20.34 81.88 M22.9 52.69 C21.19 61.57, 21.56 71.88, 18.96 81.51" fill="none" stroke="#000000" stroke-width="1"></path></g></g><mask></mask><g stroke-linecap="round" transform="translate(369.8555908203125 223.40164184570312) rotate(0 128.43408203125 34.627471923828125)"><path d="M17.31 0 M17.31 0 C75.33 3.29, 134.69 2.74, 239.55 0 M17.31 0 C94.32 -1.58, 172.52 -1.13, 239.55 0 M239.55 0 C252.56 0.58, 256.22 4.04, 256.87 17.31 M239.55 0 C250.57 -1.34, 254.62 5.6, 256.87 17.31 M256.87 17.31 C256.82 25.19, 258.35 33.55, 256.87 51.94 M256.87 17.31 C255.9 27.37, 256.56 37.61, 256.87 51.94 M256.87 51.94 C257.08 62.39, 250.67 69.59, 239.55 69.25 M256.87 51.94 C257.32 61.68, 251.45 67.64, 239.55 69.25 M239.55 69.25 C166.37 72.57, 97.21 72.75, 17.31 69.25 M239.55 69.25 C162.11 68.73, 84.65 68.7, 17.31 69.25 M17.31 69.25 C7.44 70.79, -0.95 65.22, 0 51.94 M17.31 69.25 C7.78 70.97, -1.82 61.93, 0 51.94 M0 51.94 C1.75 38.41, 1.33 26.64, 0 17.31 M0 51.94 C-0.77 39.7, 0.87 28.83, 0 17.31 M0 17.31 C1.63 7.4, 6.74 -1.87, 17.31 0 M0 17.31 C1.53 7.02, 5.47 1.6, 17.31 0" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(406.88975524902344 245.52911376953125) rotate(0 91.39991760253906 12.5)"><text direction="ltr" dominant-baseline="text-before-edge" fill="#000000" font-family="Virgil, Segoe UI Emoji" font-size="20px" style="white-space: pre;" text-anchor="middle" x="91.39991760253906" y="0">Sample work folder</text></g><g stroke-linecap="round"><g transform="translate(365.6912543940447 300.20401374524687) rotate(0 -78.24446562260306 33.03710750725938)"><path d="M0.98 0.58 C-25.45 11.56, -131.47 55.99, -157.61 66.87 M0.03 -0.16 C-26.13 10.4, -129.44 53.95, -155.49 65.17" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(365.6912543940447 300.20401374524687) rotate(0 -78.24446562260306 33.03710750725938)"><path d="M-132.59 42.83 C-140.39 53.74, -150.32 61.83, -154.55 65.71 M-133.59 45.09 C-142.76 52.93, -150.43 60.69, -155.55 64.44" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(365.6912543940447 300.20401374524687) rotate(0 -78.24446562260306 33.03710750725938)"><path d="M-124.56 61.72 C-135.57 65.52, -148.55 66.43, -154.55 65.71 M-125.56 63.97 C-137.88 64.44, -148.68 64.84, -155.55 64.44" fill="none" stroke="#000000" stroke-width="1"></path></g></g><mask></mask><g stroke-linecap="round"><g transform="translate(457.77445920643095 305.3078918457031) rotate(0 -20.204391499127723 30.54241943359375)"><path d="M-0.67 -0.61 C-7.47 9.71, -35.13 51.96, -41.56 62.24 M1.17 1.68 C-5.2 11.68, -32.69 50.62, -39.46 60.73" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(457.77445920643095 305.3078918457031) rotate(0 -20.204391499127723 30.54241943359375)"><path d="M-32.94 29.76 C-31.69 40.37, -35.45 45.4, -39.65 59.7 M-31.87 31.61 C-32.94 37.8, -35.27 43.91, -38.53 59.84" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(457.77445920643095 305.3078918457031) rotate(0 -20.204391499127723 30.54241943359375)"><path d="M-16.04 41.4 C-18.78 49.18, -26.5 51.48, -39.65 59.7 M-14.97 43.25 C-19.66 46.94, -25.53 50.61, -38.53 59.84" fill="none" stroke="#000000" stroke-width="1"></path></g></g><mask></mask><g stroke-linecap="round"><g transform="translate(552.5808313514146 303.1985168457031) rotate(0 18.78546565239634 28.9154052734375)"><path d="M0.37 -0.6 C6.47 9.11, 30.97 48.52, 37.27 58.28 M-0.89 1.71 C4.97 11.04, 29.73 46.78, 36.16 56.4" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(552.5808313514146 303.1985168457031) rotate(0 18.78546565239634 28.9154052734375)"><path d="M10.82 38.37 C21.18 45.96, 29.34 51.58, 36.98 58.03 M12.65 39.49 C19.42 42.7, 24.88 48.33, 35.87 57.15" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(552.5808313514146 303.1985168457031) rotate(0 18.78546565239634 28.9154052734375)"><path d="M27.78 26.82 C32.15 38.55, 34.31 48.26, 36.98 58.03 M29.61 27.94 C31.94 34.25, 32.88 42.96, 35.87 57.15" fill="none" stroke="#000000" stroke-width="1"></path></g></g><mask></mask><g stroke-linecap="round" transform="translate(93.232421875 376.3918762207031) rotate(0 78.85260009765625 29.0389404296875)"><path d="M14.52 0 M14.52 0 C55.57 2.05, 96.96 -1.62, 143.19 0 M14.52 0 C59.17 0.16, 103.32 0.54, 143.19 0 M143.19 0 C154.61 -1.03, 156.44 6.75, 157.71 14.52 M143.19 0 C153.91 1.59, 157.25 2.98, 157.71 14.52 M157.71 14.52 C157.25 22.17, 155.57 27.37, 157.71 43.56 M157.71 14.52 C158.21 21.59, 157.22 28.08, 157.71 43.56 M157.71 43.56 C157.94 52.3, 152.97 56.91, 143.19 58.08 M157.71 43.56 C159.09 51.85, 151.08 60.3, 143.19 58.08 M143.19 58.08 C100.26 60.02, 54.81 57.01, 14.52 58.08 M143.19 58.08 C108.35 58.89, 73.56 58.8, 14.52 58.08 M14.52 58.08 C5.27 57.71, 1.28 52.02, 0 43.56 M14.52 58.08 C6.86 56.48, 1.14 54.91, 0 43.56 M0 43.56 C1.97 37.06, 1.32 31.98, 0 14.52 M0 43.56 C-0.27 34.07, 0.88 26.99, 0 14.52 M0 14.52 C-1.84 6.14, 3.22 -0.84, 14.52 0 M0 14.52 C2.15 2.68, 5.49 1.49, 14.52 0" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(134.48504638671875 392.9308166503906) rotate(0 37.5999755859375 12.5)"><text direction="ltr" dominant-baseline="text-before-edge" fill="#000000" font-family="Virgil, Segoe UI Emoji" font-size="20px" style="white-space: pre;" text-anchor="middle" x="37.5999755859375" y="0">  excali</text></g><g stroke-linecap="round" transform="translate(314.1513671875 376.8102111816406) rotate(0 78.85260009765625 29.0389404296875)"><path d="M14.52 0 M14.52 0 C53.01 2.2, 87.43 -0.25, 143.19 0 M14.52 0 C42.81 0.36, 70.85 0.6, 143.19 0 M143.19 0 C151.47 0.99, 159.16 2.88, 157.71 14.52 M143.19 0 C151.06 1.79, 159.71 4.12, 157.71 14.52 M157.71 14.52 C156.76 25.21, 156.91 33.67, 157.71 43.56 M157.71 14.52 C158.64 24.58, 157.57 37.19, 157.71 43.56 M157.71 43.56 C155.83 53.8, 154.16 58.3, 143.19 58.08 M157.71 43.56 C158.45 51.01, 154.46 58.48, 143.19 58.08 M143.19 58.08 C113.84 56.74, 86.41 57, 14.52 58.08 M143.19 58.08 C102.82 57.35, 61.4 57.8, 14.52 58.08 M14.52 58.08 C4.65 56.7, 1.32 54.62, 0 43.56 M14.52 58.08 C3.58 58.1, 0.14 53.08, 0 43.56 M0 43.56 C1.27 39.08, -1.26 32.8, 0 14.52 M0 43.56 C-0.77 34.51, -0.67 24.43, 0 14.52 M0 14.52 C1.47 5.48, 3.95 -0.85, 14.52 0 M0 14.52 C1.9 4.94, 5.35 0.56, 14.52 0" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(379.47398376464844 393.3491516113281) rotate(0 13.529983520507812 12.5)"><text direction="ltr" dominant-baseline="text-before-edge" fill="#000000" font-family="Virgil, Segoe UI Emoji" font-size="20px" style="white-space: pre;" text-anchor="middle" x="13.529983520507812" y="0">img</text></g><g stroke-linecap="round" transform="translate(520.8109741210938 372.9931335449219) rotate(0 78.85260009765625 29.0389404296875)"><path d="M14.52 0 M14.52 0 C43.5 -1.88, 68.24 -2.62, 143.19 0 M14.52 0 C48.31 -0.37, 81.7 -0.46, 143.19 0 M143.19 0 C153.86 1.46, 155.75 3.27, 157.71 14.52 M143.19 0 C154.66 2, 156.99 6.1, 157.71 14.52 M157.71 14.52 C158.1 22.64, 156.27 33.9, 157.71 43.56 M157.71 14.52 C156.63 25.62, 158.37 36.63, 157.71 43.56 M157.71 43.56 C158.27 54.53, 153.09 58.72, 143.19 58.08 M157.71 43.56 C155.47 54.83, 153.27 56.17, 143.19 58.08 M143.19 58.08 C102.49 56.21, 63.58 57.52, 14.52 58.08 M143.19 58.08 C116.98 58.88, 91.01 58.71, 14.52 58.08 M14.52 58.08 C3.46 59.4, 1.38 52.14, 0 43.56 M14.52 58.08 C4.86 58.22, -0.16 51.3, 0 43.56 M0 43.56 C1.65 35.08, 1.63 30.11, 0 14.52 M0 43.56 C0.62 33.06, 0.19 24.38, 0 14.52 M0 14.52 C0.64 3.95, 3.99 1.66, 14.52 0 M0 14.52 C0.1 5.35, 5.4 0.74, 14.52 0" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(572.9036026000977 389.5320739746094) rotate(0 26.759971618652344 12.5)"><text direction="ltr" dominant-baseline="text-before-edge" fill="#000000" font-family="Virgil, Segoe UI Emoji" font-size="20px" style="white-space: pre;" text-anchor="middle" x="26.759971618652344" y="0">notes</text></g><g stroke-linecap="round"><g transform="translate(625.8288542754399 128.18984985351562) rotate(0 71.1604951733757 44.82972717285156)"><path d="M-0.38 -0.91 C23.07 14.28, 117.52 75.62, 141.28 90.79 M1.62 1.23 C25.39 16.14, 120.16 74.8, 143.45 89.26" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(625.8288542754399 128.18984985351562) rotate(0 71.1604951733757 44.82972717285156)"><path d="M112.57 81.4 C126.14 85.16, 135.19 88.61, 145 88.03 M114.12 83.19 C122.94 85.01, 131.49 85.49, 143.56 89.8" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(625.8288542754399 128.18984985351562) rotate(0 71.1604951733757 44.82972717285156)"><path d="M123.38 63.96 C133.15 73.73, 138.45 83.24, 145 88.03 M124.93 65.75 C130.76 72.59, 136.24 78.03, 143.56 89.8" fill="none" stroke="#000000" stroke-width="1"></path></g></g><mask></mask><g stroke-linecap="round" transform="translate(693.6055908203125 222.43307495117188) rotate(0 86.40557861328125 33.75212097167969)"><path d="M16.88 0 M16.88 0 C51.6 1.14, 86.57 -1.34, 155.94 0 M16.88 0 C54.33 -0.28, 91.69 0.49, 155.94 0 M155.94 0 C167.72 -1.4, 171.2 7.08, 172.81 16.88 M155.94 0 C167.14 1.6, 172.83 7.06, 172.81 16.88 M172.81 16.88 C171.37 27.79, 173.62 37.78, 172.81 50.63 M172.81 16.88 C172.28 27.83, 172.78 37.45, 172.81 50.63 M172.81 50.63 C171.3 63.47, 167.81 68.76, 155.94 67.5 M172.81 50.63 C172.67 63.66, 167.94 68.79, 155.94 67.5 M155.94 67.5 C122.79 64.88, 86.87 67.11, 16.88 67.5 M155.94 67.5 C125.62 69.01, 97.57 68.42, 16.88 67.5 M16.88 67.5 C7.39 68.42, 1.47 61.54, 0 50.63 M16.88 67.5 C6.1 67.15, 2.28 61.97, 0 50.63 M0 50.63 C-0.63 39.38, -1.44 27.17, 0 16.88 M0 50.63 C0 37.57, 0.91 24.89, 0 16.88 M0 16.88 C-1.63 7.1, 5.98 0.1, 16.88 0 M0 16.88 C-0.55 6.36, 5.21 -0.87, 16.88 0" fill="none" stroke="#000000" stroke-width="1"></path></g><g transform="translate(753.2511978149414 243.68519592285156) rotate(0 26.759971618652344 12.5)"><text direction="ltr" dominant-baseline="text-before-edge" fill="#000000" font-family="Virgil, Segoe UI Emoji" font-size="20px" style="white-space: pre;" text-anchor="middle" x="26.759971618652344" y="0">notes</text></g></svg></p>
+<hr/>
+<h2 id="tools">Tools</h2>
+<p>Refer <a href="../tools/#terminal">productivity/tools</a> for tools that I am using for documentation</p>
+<hr/>
+<h2 id="issues">Issues</h2>
+<h3 id="open">Open</h3>
+<ol>
+<li>The syntax highlighting in vim for image alt text is not working when <code>code</code> element has to be put in the alt text.</li>
+<li>Highlight.js is not allowing pygments.css to do the highlighting. For now I have disabled it.</li>
+<li>Indented fenced code blocks are not getting syntax highlighted in md files by VIM</li>
+<li>Puml plugin throws an uncaught error when writing the below content sometimes (ignore the brackets - I put it stop the actual rendering). This interrupts mkdocs.
+      <code>(puml)
+      @startuml
+      @enduml</code></li>
+<li>As observed puml svgs are getting affected by the <code>excali.css</code> file. They are rendered to fit the page.
+    mermaid svgs are not getting affected by the css so they are overflowing the page boundary if diagram is big.
+    Could be because mermaid is getting loaded after loading of page.</li>
+<li>Table headers are not getting aligned.</li>
+<li>Blank spaces are automatically removed when converting from md to html. So any manual alignment done with spaces is lost.</li>
+<li>Notes are not compatible with Github markdown rendering:<ul>
+<li>Stop using hard line breaks in your notes. With this you can even adhere to 80 character limit for lines.</li>
+<li>do not use two spaces at the end for line break as they are not easily seen.</li>
+<li>use bullets if you want new lines.</li>
+<li>Will have to re format all the docs till now.</li>
+</ul>
+</li>
+</ol>
+<h3 id="closed">Closed</h3>
+<ol>
+<li>Indented fenced code blocks are not supported by mkdocs. This is possible in Github <a href="ext3">[3]</a> and pandoc (checked myself)</li>
+</ol>
+<h2 id="roadmap">Roadmap</h2>
+<ol>
+<li>The Horizontal rule while converting to PDF. The line is not from margin to margin. (Issue)</li>
+<li>Adding coloring support to text (Feature)</li>
+<li>Supporting Github Markdown rendering (Github pages) (Feature)</li>
+<li>The Reference links are getting right aligned due to word wrap when converting from md to pdf (Issue)</li>
+<li>Single source of docs should be updated irrespective of device (NAS/Cloud) (Feature)</li>
+<li>Mermaid support in fenced code blocks</li>
+<li>Indented fenced code blocks in PDFs using pandoc to be checked.</li>
+</ol>
+<hr/>
+<h2 id="references">References</h2>
+<p>[1] <a href="https://medium.com/@TKalippke/all-you-have-to-do-is-type-yourself-494a2c0b2fd6">https://medium.com/@TKalippke/all-you-have-to-do-is-type-yourself-494a2c0b2fd6</a>
+[2] <a href="https://vim.works/2019/03/16/using-markdown-in-vim/">https://vim.works/2019/03/16/using-markdown-in-vim/</a>
+[3] <a href="https://stackoverflow.com/questions/6235995/markdown-github-syntax-highlighting-of-code-block-as-a-child-of-a-list#:~:text=Just%20wrap%20your%20code%20blocks,t%20need%20to%20be%20indented.">https://stackoverflow.com/questions/6235995/markdown-github-syntax-highlighting-of-code-block-as-a-child-of-a-list#:~:text=Just%20wrap%20your%20code%20blocks,t%20need%20to%20be%20indented.</a>
+[4] <a href="https://stackoverflow.com/questions/29494271/svg-fonts-are-not-loading-on-a-webpage-using-font-face-in-chrome">https://stackoverflow.com/questions/29494271/svg-fonts-are-not-loading-on-a-webpage-using-font-face-in-chrome</a>
+[5] <a href="https://css-tricks.com/using-custom-fonts-with-svg-in-an-image-tag/">https://css-tricks.com/using-custom-fonts-with-svg-in-an-image-tag/</a>
+[6] <a href="https://github.com/mermaid-js/mermaid/issues/2509">https://github.com/mermaid-js/mermaid/issues/2509</a> (mermaid;issue)
+[7] <a href="https://unpkg.com/@excalidraw/excalidraw@0.14.1/dist/excalidraw-assets/Virgil.woff2">https://unpkg.com/@excalidraw/excalidraw@0.14.1/dist/excalidraw-assets/Virgil.woff2</a> (excalidraw;asset)
+[8] <a href="https://gitlab.com/nicolas.dupont/mkdocs-plugin-inline-svg">https://gitlab.com/nicolas.dupont/mkdocs-plugin-inline-svg</a> (mkdocs;inline-svg)
+[9] <a href="https://c4model.com/">https://c4model.com/</a> (diagramming;c4;software;modelling)
+[10] <a href="https://github.com/fralau/mkdocs-mermaid2-plugin#basic-configuration">https://github.com/fralau/mkdocs-mermaid2-plugin#basic-configuration</a> (mermaid;mkdocs;plugin)
+[11] <a href="https://github.com/MikhailKravets/mkdocs_puml">https://github.com/MikhailKravets/mkdocs_puml</a> (mkdocs;puml;plugin)
+[12] <a href="https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/">https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/</a> (mkdocs;math)
+[13] <a href="https://squidfunk.github.io/mkdocs-material/reference/mathjax/">https://squidfunk.github.io/mkdocs-material/reference/mathjax/</a> (mkdocs;math)</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      © 2024 Saurabh Rajguru
+    </div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+<script src="../../js/mathjax_config.js"></script>
+<script src="../../js/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
