@@ -2,3 +2,7 @@ build
 *.swp
 .DS_Store
 .python-version
+docs/work
+docs/learn
+docs/personal
+docs/ctf
